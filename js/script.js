@@ -12,5 +12,5 @@ function getMyAge(){
     var days=Math.floor(daysAM);
     document.getElementById('age-years').innerHTML=Math.floor(years);
     document.getElementById('age-months').innerHTML=Math.floor(months);
-    document.getElementById('age-days').innerHTML=(days>1||days==0)?days+'days.':days+'day.';
+    document.getElementById('age-days').innerHTML=(days>1||days==0)?days+' days.':days+' day.';
 }
