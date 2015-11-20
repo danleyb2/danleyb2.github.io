@@ -1,7 +1,8 @@
 window.onload=function(){
     getMyAge();
+    document.getElementById('send-message').onsubmit=sendMessage
 
-};
+};var f;
 function getMyAge(){
     var ageMills=new Date()-new Date('1/26/1996');
     var inDays=ageMills/1000/60/60/24;  //days
@@ -13,4 +14,12 @@ function getMyAge(){
     document.getElementById('age-years').innerHTML=Math.floor(years);
     document.getElementById('age-months').innerHTML=Math.floor(months);
     document.getElementById('age-days').innerHTML=(days>1||days==0)?days+' days.':days+' day.';
+}
+function sendMessage(t){
+    t.preventDefault();
+   mixpanel.track('message',{
+        "name":t.target.name.value.trim(),
+        "email":t.target.email.value.trim(),
+        "message":t.target.message.value.trim()
+    });
 }
