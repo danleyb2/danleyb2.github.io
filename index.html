@@ -64,11 +64,12 @@
 
             display: block;
             width: 100%;
-            height: 34px;
-            padding: 2px 0;
-            font-size: 18px;
+            height: 39px;
+            box-sizing: border-box;
+            padding: 2px 4px;
+            font-size: 23px;
             line-height: 1.42857143;
-            color: #555;
+            color: #000000;
             background-color: #fff;
 
             border: 1px solid #ccc;
@@ -81,7 +82,7 @@
         }
         textarea{
             margin: 0 0 10px 0;
-            min-height: 150px;
+            min-height: 100px;
         }
 
 
@@ -403,24 +404,29 @@
     </div>
     <div class="step slide" id="six" data-x="4000" data-y="-1500">
         <strong>Leave Me a Message.</strong>
+        <div class="pane form" data-x="0" data-y="0">
+            <form>
 
-        <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your email address">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                    <input type="submit" value="send" class="form-control">
+                </div>
 
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Your email address">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" class="form-control" placeholder="Message"></textarea>
-                <input type="submit" value="send" class="form-control">
-            </div>
+            </form>
+        </div>
+        <div class="pane map" data-x="0" data-y="500">
+            <strong>My Location.</strong>
 
-        </form>
+        </div>
     </div>
     <div class="step slide" id="seven" data-x="5000" data-y="-1500">
         <strong>Thanks To.</strong>
@@ -437,6 +443,7 @@
     impress('impress', 'step').init(false);
     impress('two', 'pane').init2(true);
     impress('one', 'pane').init2(true);
+    impress('six', 'pane').init2(true);
 </script>
 </body>
 </html>
