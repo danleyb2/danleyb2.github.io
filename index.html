@@ -26,6 +26,35 @@
         .site-img{
             width: 300px;height: 200px;
         }
+        .btn:hover{
+            color: #ffffff;
+        }
+        .btn{
+
+            color: #000000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 700;
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: #6D83F5 none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
         .form-group{
             width: 100%;
             margin: 5px 0;
@@ -37,7 +66,7 @@
             width: 100%;
             height: 34px;
             padding: 2px 0;
-            font-size: 14px;
+            font-size: 18px;
             line-height: 1.42857143;
             color: #555;
             background-color: #fff;
@@ -80,7 +109,7 @@
             <div style="text-align: center;margin-top: 20px;">
                 <address><b>Phone</b> +254701653740</address>
                 <address> <b>Email</b> <a href="mailto:ndieksman@gmail.com" class="">ndieksman@gmail.com</a></address>
-                <button style="" onclick="window.location='#/six'">Leave Me Message</button>
+                <button class="btn" style="" onclick="window.location='#/six'">Leave Me Message</button>
             </div>
 
         </div>
@@ -377,15 +406,15 @@
 
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Name">
+                <input type="text" id="name" class="form-control" placeholder="Your name">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control">
+                <input type="email" id="email" class="form-control" placeholder="Your email address">
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" class="form-control"></textarea>
+                <textarea id="message" class="form-control" placeholder="Message"></textarea>
                 <input type="submit" value="send" class="form-control">
             </div>
 
