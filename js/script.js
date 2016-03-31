@@ -1,8 +1,9 @@
 window.onload=function(){
-    getMyAge();
     document.getElementById('send-message').onsubmit=sendMessage
 
-};var f;
+};
+getMyAge();
+var f;
 function getMyAge(){
     var ageMills=new Date()-new Date('1/26/1996');
     var inDays=ageMills/1000/60/60/24;  //days
