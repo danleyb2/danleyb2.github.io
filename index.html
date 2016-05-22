@@ -1,511 +1,309 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="css/impress.css" rel="stylesheet">
-    <!-- start Mixpanel -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+    <title>Nyaundi Brian - Strategic Professional & Technologist</title>
+    <META name="description"
+          content="Nyaundi brian is a December 2017 The Technical University of Kenya graduate seeking full time employment.">
+    <meta name="keywords"
+          content="Nyaundi Brian, IT, Technologist, Electrical Engineering, The Technical University of Kenya, Programmer, danleyb2">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fancybox.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
+    <script type="text/javascript" src="js/jquery.adipoli.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/jquery.gmap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
     <script type="text/javascript">
-        (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-            for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+
+        var _gaq = _gaq || [];
+
+        _gaq.push(['_setAccount', 'UA-30478652***-1']);
+        _gaq.push(['_setDomainName', 'jw.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
     </script>
-    <!-- end Mixpanel -->
-
-    <style>
-        .project .p-header{
-            text-align: center;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        .project header img{
-            width: 16px;height: 16px;
-        }
-        .lbl{
-            background: white;
-            border-radius: 2px;
-            padding: 2px 2px 0 2px;
-            color: black;
-            margin: 0 1px 0 1px;
-        }
-        b.b{
-            width: 100px;
-            display: inline-block;
-        }
-        .site-img{
-            width: 300px;
-            height: 200px;
-            margin-right: 10px;
-        }
-        .btn:hover{
-            color: #ffffff;
-        }
-        .btn{
-
-            color: #000000;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-            font-weight: 700;
-            display: inline-block;
-            padding: 6px 12px;
-            margin-bottom: 0;
-            font-size: 14px;
-            line-height: 1.42857143;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            -ms-touch-action: manipulation;
-            touch-action: manipulation;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            background: #6D83F5 none;
-            border: 1px solid transparent;
-            border-radius: 4px;
-        }
-        .form-group{
-            width: 100%;
-            margin: 5px 0;
-        }
-        .form-control{
-            font: inherit;
-
-            display: block;
-            width: 100%;
-            height: 39px;
-            box-sizing: border-box;
-            padding: 2px 4px;
-            font-size: 23px;
-            line-height: 1.42857143;
-            color: #000000;
-            background-color: #fff;
-
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-        }
-        textarea{
-            margin: 0 0 10px 0;
-            min-height: 100px;
-        }
-        #map{
-            height: 90%;
-        }
-
-    </style>
-
 </head>
-<body class="impress-not-supported">
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
-        version of this presentation.</p>
 
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
-<div id="impress">
-    <div id="one" data-x="-1000" data-y="-1500" class="step slide">
-        <div class=""><strong>About</strong></div>
+<body>
+<!-- Container -->
+<div id="container">
 
-        <div class="pane about" data-x="0" data-y="0">
-            <img src="img/me/me.png" style="width:192px;height: 192px;">
-            <div style="position: absolute;display:inline-block;padding: 5px 0 2px 20px">
-                <b class="b">Name </b> Nyaundi Brian<br>
-                <b class="b">Age</b> <span id="age-years"></span> years|<span id="age-months"></span> months|<span id="age-days"></span><br>
-                <b class="b">Sex </b> Male<br>
+    <!-- Top -->
+    <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+
+            <h2><span itemprop="name" class="my-name"></span></h2>
+            <h4><span itemprop="title" class="my-title"></span></h4>
+        </div>
+        <!-- /Logo -->
+
+        <!-- Social Icons -->
+        <div class="socialicons">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/bondieki2" class="social-facebook"
+                       target="_blank" itemprop="url"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/brian-nyaundi-87150a76" class="social-in"
+                       target="_blank" itemprop="url"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.twitter.com/danleyb2" class="social-twitter" target="_blank"
+                       itemprop="url"></a>
+                </li>
+                <li><a target="_blank" href="mailto:ndieksman@gmail.com" class="social-email" target="_blank"
+                       itemprop="url"></a></li>
+            </ul>
+            <a class="social-text" target="_blank" href="#" itemprop="url">DOWNLOAD RESUME</a>
+
+        </div>
+        <!-- /Social Icons -->
+    </div>
+    <!-- /Top -->
+
+    <!-- Content -->
+    <div id="content">
+
+        <!-- Profile -->
+        <div id="profile">
+            <!-- About section -->
+            <div class="about">
+                <div class="photo-inner">
+                    <img src="#" class="my-img" height="190" width="153" alt="my avatar"/>
+                </div>
+                <h1><span itemprop="name" class="my-name"></span></h1>
+                <h3><span itemprop="title" class="my-title"></span></h3>
+                <p class="my-intro">loading a little about me...</p>
             </div>
-            <div style="text-align: center;margin-top: 20px;">
-                <address><b>Phone</b> +254701653740</address>
-                <address> <b>Email</b> <a href="mailto:ndieksman@gmail.com" class="">ndieksman@gmail.com</a></address>
-                <button class="btn" style="" onclick="window.location='#/six'">Leave Me Message</button>
+        </div>
+        <!-- /About section -->
+
+        <!-- Personal info section -->
+        <ul class="personal-info">
+            <li><label>Name</label><span class="my-name">loading my name...</span></li>
+            <li><label>DOB</label><span class="my-dob">loading date of birth...</span></li>
+            <li><label>Address</label><span class="my-address">loading my address...</span></li>
+            <li><label>Email</label><span class="my-email">loading my email...</span></li>
+            <li><label>Phone</label><span class="my-phone">loading my phone...</span></li>
+            <li><label>Website</label><span class="my-blog">loading my blog...</span></li>
+        </ul>
+        <!-- /Personal info section -->
+        <!-- /Profile -->
+
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="tabs">
+                <li class="tmenu"><a href="#profile" class="tab-profile">Profile</a></li>
+                <li class="tmenu"><a href="#resume" class="tab-resume">Resume</a></li>
+                <li><a href="#" class="tab-portfolio">Blog</a></li>
+                <li class="tmenu"><a href="#contact" class="tab-contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /Menu -->
+
+        <!-- Resume -->
+        <div id="resume">
+            <div class="timeline-section">
+
+                <h3 class="main-heading"><span>Work Experience</span></h3>
+                <ul class="timeline">
+                    <li style="display: none">
+
+                        <div class="timelineUnit " >
+                            <h4><a href="http://www1.umn.edu/twincities/index.html/">The Technical University of Kenya</a></h4>
+                            <h5>Peer Assistant<span class="timelineDate">Jan. 2013 - Present</span></h5>
+                            <p>I assist over 100 undergraduate students in mastering an introductory MIS course
+                                ("Information Systems for Business Processes and Management").</p>
+                            <br/>
+                            <h5>Research Assistant<span class="timelineDate">Sept. 2011 - Present</span></h5>
+                            <p>I collect and analyze alliance data from over 300 pharmaceutical firms to identify trends
+                                in organizational behavior.</p>
+                            <br/>
+                            <h5>Disability Services Assistant<span class="timelineDate">Feb. 2012 - May 2012</span></h5>
+                            <p>I supported a visually impaired undergraduate student's mastery of an upper-elective MIS
+                                course (“Analysis and Modeling for Business Systems Development”) through intensive
+                                out-of-class assistance and tutoring.</p>
+                        </div>
+                    </li>
+                    <li>
+
+                        <div class="timelineUnit">
+                            <h4><a href="http://http://interintel.co.ke/">InterIntel Technologies</a></h4>
+                            <h5>Intern<span class="timelineDate">May 2015 - Present</span></h5>
+                            <p>python Django developer,
+                            </p>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <!-- /Timeline for Employment  -->
+
             </div>
+            <div class="skills-section">
+                <!-- Skills -->
+                <h3 class="main-heading"><span>Technical Expertise</span></h3>
+                <ul class="skills">
 
+                </ul>
+                <!-- /Skills -->
+            </div>
         </div>
-        <div class="pane  about" data-x="0" data-y="500">
-            I am a curious and ambition young professional in love with programing and the Computers.
-            I am particularly good at understanding problems and
-            providing simple and effective solutions.
-            I am in a search for a company that has team-based culture
-            and can provide me with ongoing development for my good organizational,
-            analytical and technical skills.
+        <!-- /Resume -->
 
+        <!-- Portfolio >
+        <div id="portfolio">
+
+             <ul id="portfolio-filter">
+                <li><a href="" class="current" data-filter="*">All</a></li>
+                <li><a href="" data-filter=".webdesign">WebDesign</a></li>
+                <li><a href="" data-filter=".photoghraphy">Photoghraphy</a></li>
+                <li><a href="" data-filter=".illustration">Illustration</a></li>
+                <li><a href="" data-filter=".print">Print</a></li>
+                <li><a href="" data-filter=".animation">Animation</a></li>
+            </ul>
+            <div class="extra-text">Some of the projects i'm proud with</div>
+            <ul id="portfolio-list">
+                <li class="illustration print">
+                    <a href="portfolio/1.jpg" rel="portfolio">
+                        <img src="portfolio/1-thumb.jpg" alt="">
+                        <h2 class="title">Hello Goodbye</h2>
+                        <span class="categorie">Print / Illustration</span>
+                    </a>
+                </li>
+                <li class="photoghraphy">
+                    <a href="portfolio/2.jpg" rel="portfolio">
+                        <img src="portfolio/2-thumb.jpg" alt="" >
+                        <h2 class="title">Help us</h2>
+                        <span class="categorie">Photography</span>
+                    </a>
+                </li>
+                <li class="webdesign">
+                    <a href="portfolio/3.jpg" rel="portfolio">
+                        <img src="portfolio/3-thumb.jpg" alt="" >
+                        <h2 class="title">Snow time</h2>
+                        <span class="categorie">Webdesign</span>
+                    </a>
+                </li>
+                <li class="animation print">
+                    <a href="portfolio/4.jpg" rel="portfolio">
+                        <img src="portfolio/4-thumb.jpg" alt="" >
+                        <h2 class="title">Sunshine</h2>
+                        <span class="categorie">Print / Animation</span>
+                    </a>
+                </li>
+                <li class="animation">
+                    <a href="portfolio/5.jpg" rel="portfolio">
+                        <img src="portfolio/5-thumb.jpg" alt="" >
+                        <h2 class="title">Come together</h2>
+                        <span class="categorie">Animation</span>
+                    </a>
+                </li>
+                <li class="webdesign print">
+                    <a href="portfolio/6.jpg" rel="portfolio">
+                        <img src="portfolio/6-thumb.jpg" alt="" >
+                        <h2 class="title">The yellow</h2>
+                        <span class="categorie">Webdesign / Print</span>
+                    </a>
+                </li>
+                <li class="photoghraphy">
+                    <a href="portfolio/7.jpg" rel="portfolio">
+                        <img src="portfolio/7-thumb.jpg" alt="" >
+                        <h2 class="title">Black bird</h2>
+                        <span class="categorie">Photoghraphy</span>
+                    </a>
+                </li>
+                <li class="illustration">
+                    <a href="portfolio/8.jpg" rel="portfolio">
+                        <img src="portfolio/8-thumb.jpg" alt="" >
+                        <h2 class="title">Revolution</h2>
+                        <span class="categorie">Illustration</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="pane about" data-x="0" data-y="1000">
-            <strong style="display: block;text-align: center;width: 100%;margin-bottom: 8px;">Education</strong>
+        <!-- /Portfolio -->
 
-            2013 to present <br>
-            Bachelor in Electrical Engineering<br>
-            The Technical University of Kenya.
-            <br><hr>
-            2009 to 2012<br>
-            High School Education<br>
-            Homa Bay High School, Homa Bay County.
-
-        </div>
-        <div class="pane about" data-x="0" data-y="1500">
-            <strong style="display: block;text-align: center;width: 100%;margin-bottom: 8px;">Languages I Speak.</strong>
-            English. <br>
-            Kiswahili.<br>
-
-
-            ..And lots of programming languages.. :)
-        </div>
-
-
-    </div>
-    <!--div id="hint" class="step "></div-->
-    <div id="two" class="step slide" data-x="0" data-y="-1500">
-
-        <div class=""><strong style=""> Projects</strong></div>
-
-
-        <div class="pane  project" data-x="0" data-y="0">
-            <header style="">
-                <div style="" class="p-header">
-                <img src="#" alt="icon" style="">
-                <span style="  font-size: x-large;text-shadow: 2px 0px 2px rgb(252, 242, 242);color: black;">Advertise</span>
-                    </div>
-                <div style="" class="p-header">
-                <span class="lbl">PHP</span>
-                <span class="lbl">Mysql</span>
-                <span class="lbl">[HTML CSS JAVASCRIPT]</span>
-                    </div>
-            </header>
-            <article style="margin-top: 5px">
-                <section>
-                    <img src="img/projects/advertise.png" class="site-img" alt="">
-                    <aside style="display: inline-block;position: absolute;">
-                        <div>
-                            <b>Test Credentials</b><br>
-                            Username/Email:ndieksman@gmail.com
-                            Password:pass
-                        </div>
-                        <div>
-                            <b>LInks</b><br>
-                            <a href="http://moto-ndieks.rhcloud.com/">View Test Site.</a>
-                            <a href="https://github.com/danleyb2/advertise">View Source.</a>
-                        </div>
-                    </aside>
-                </section>
-                <section>
-                    <b class="b">Description.</b>
-                    <p style="color: black">
-                        A simple advertisement website with an admin panel, you can use the
-                        above login credentials to check it out.
-                    </p>
-                </section>
-            </article>
-
-        </div>
-        <div class="pane project" data-x="0" data-y="500">
-            <header>
-                <div style="" class="p-header">
-                <img src="#" alt="icon" style="">
-                <span style="  font-size: x-large;text-shadow: 2px 0 2px rgb(252, 242, 242);color: black;">Django Blog</span>
-                </div>
-                <div style="" class="p-header">
-                <span class="lbl">Python</span>
-                <span class="lbl">Django</span>
-                <span class="lbl">[HTML CSS JAVASCRIPT]</span>
-                <span class="lbl">JQuery</span>
-                <span class="lbl">Bootstrap</span>
-                    <span class="lbl">SQLite</span>
-                </div>
-            </header>
-            <article style="margin-top: 5px">
-                <section>
-                    <img src="img/projects/djangoblog.png" class="site-img" alt="">
-                    <aside style="display: inline-block;position: absolute;">
-                        <div>
-                            <b>Test Credentials</b><br>
-                            Username:brian
-                            Password:pass
-                        </div>
-                        <div>
-                            <b>LInks</b><br>
-                            <a href="http://danleyb2.pythonanywhere.com">View Test Site.</a>
-                            <a href="https://github.com/danleyb2/DjangoBlog">View Source.</a>
-                        </div>
-                    </aside>
-                </section>
-                <section>
-                    <b class="b">Description.</b>
-                    <p style="color: black">
-                        A simple blog using the python Django framework. Admin can post and viewers can make comments.
-                    </p>
-                </section>
-            </article>
-
-
-        </div>
-        <!--div class="pane project" data-x="0" data-y="1500">Time ago</div-->
-        <!--div class="pane project" data-x="0" data-y="2000">My Bots</div-->
-        <!--div class="pane project" data-x="0" data-y="2500">Sticky Notes</div-->
-        <!--div class="pane project" data-x="0" data-y="3000">Snake Game HTML5</div-->
-        <div class="pane project" data-x="0" data-y="1000">
-            <header style="">
-                <div style="" class="p-header">
-                <img src="#" alt="icon" style="">
-                <span style="  font-size: x-large;text-shadow: 2px 0 2px rgb(252, 242, 242);color: black;">My Group Chat</span>
-                    </div>
-                <div style="" class="p-header">
-                <span class="lbl">NodeJs</span>
-                <span class="lbl">[HTML CSS JAVASCRIPT]</span>
-                    </div>
-            </header>
-            <article style="margin-top: 5px">
-                <section>
-                    <img src="#" class="site-img" alt="">
-                    <aside style="display: inline-block;position: absolute;">
-                        <div>
-                            <b>Test Credentials</b><br>
-                            Username:any
-                            Password:not needed
-                        </div>
-                        <div>
-                            <b>LInks</b><br>
-                            <a href="https://mygroupchat.herokuapp.com/">View Test Site.</a>
-                            <a href="https://github.com/danleyb2/NodejsChat">View Source.</a>
-                        </div>
-                    </aside>
-                </section>
-                <section>
-                    <b class="b">Description.</b>
-                    <p style="color: black">
-                        a simple NodeJs group chat application using websockets.
-                    </p>
-                </section>
-            </article>
-        </div>
-        <div class="pane project" data-x="0" data-y="1500">
-            <header style="">
-                <div style="" class="p-header">
-                <img src="#" alt="icon" style="">
-                <span style="font-size: x-large;text-shadow: 2px 0px 2px rgb(252, 242, 242);color: black;">Layout</span>
-                    </div>
-                <div style="" class="p-header">
-                <span class="lbl">PHP</span>
-                <span class="lbl">Mysql</span>
-                <span class="lbl">[HTML CSS JAVASCRIPT]</span>
-                    </div>
-            </header>
-            <article style="margin-top: 5px">
-                <section>
-                    <img src="#" class="site-img" alt="">
-                    <aside style="display: inline-block;position: absolute;">
-                        <div>
-                            <b>Test Credentials</b><br>
-                            Username:brian
-                            Password:pass
-                        </div>
-                        <div>
-                            <b>LInks</b><br>
-                            <a href="#">View Test Site.</a>
-                            <a href="https://github.com/danleyb2/layout">View Source.</a>
-                        </div>
-                    </aside>
-                </section>
-                <section>
-                    <b class="b">Description.</b>
-                    <p style="color: black">
-                        A simple framework i use to initialize my php projects.
-                    </p>
-                </section>
-            </article>
-
-        </div>
-        <!--div class="pane project" data-x="0" data-y="2500">Webservers</div-->
-        <div class="pane project" data-x="0" data-y="2000">
-            <header style="">
-                <div style="" class="p-header">
-                <img src="#" alt="icon" style="">
-                <span style="  font-size: x-large;text-shadow: 2px 0px 2px rgb(252, 242, 242);color: black;">Things List</span>
-                    </div>
-                <div style="" class="p-header">
-                <span class="lbl">Meteor</span>
-                <span class="lbl">Mongo</span>
-                <span class="lbl">[HTML CSS JAVASCRIPT]</span>
-                <span class="lbl">JQuery</span>
-                <span class="lbl">Bootstrap</span>
-                    </div>
-            </header>
-            <article style="margin-top: 5px">
-                <section>
-                    <img src="img/projects/thingslist.png" class="site-img" alt="">
-                    <aside style="display: inline-block;position: absolute;">
-                        <div>
-                            <b>Test Credentials</b><br>
-                            Username:brian
-                            Password:pass
-                        </div>
-                        <div>
-                            <b>LInks</b><br>
-                            <a href="http://thingslist.meteor.com/">View Test Site.</a>
-                            <a href="https://github.com/danleyb2/list-things">View Source.</a>
-                        </div>
-                    </aside>
-                </section>
-                <section>
-                    <b class="b">Description.</b>
-                    <p style="color: black">
-                        A micro blogging web app that runs on Meteor JS and uses Mongo for data storage.
-                    </p>
-                </section>
-            </article>
-
-
-        </div>
-        <div class="pane project" data-x="0" data-y="2500">
-
-            <header style="">
-                <div style="" class="p-header">
-                <img src="#" alt="icon" style="">
-                <span style="  font-size: x-large;text-shadow: 2px 0px 2px rgb(252, 242, 242);color: black;">School Bursar</span>
-                    </div>
-                <div style="" class="p-header">
-                <span class="lbl">PHP</span>
-                <span class="lbl">Mysql</span>
-                <span class="lbl">[HTML CSS JAVASCRIPT]</span>
-                <span class="lbl">Materialize Css</span>
-                <span class="lbl">JQuery</span>
-                    </div>
-            </header>
-            <article style="margin-top: 5px">
-                <section>
-                    <img src="#" class="site-img" alt="">
-                    <aside style="display: inline-block;position: absolute;">
-                        <div>
-                            <b>Test Credentials</b><br>
-                            Username : rocka
-                            Password : rockview123
-                        </div>
-                        <div>
-                            <b>LInks</b><br>
-                            <a href="http://bursar-ndieks.rhcloud.com/">View Test Site.</a>
-                            <a href="https://github.com/danleyb2/Bursar">View Source.</a>
-                        </div>
-                    </aside>
-                </section>
-                <section>
-                    <b class="b">Description.</b>
-                    <p style="color: black">
-                        A simple funds data management system that could help an institution
-                        manage funds for its members, you can use the following login credentials
-                        to check it out (or you could signup).
-                    </p>
-                </section>
-            </article>
-
-
-        </div>
-    </div>
-
-
-
-    <div class="step slide" id="four" data-x="1000" data-y="-1500">
-        <strong>Technologies.</strong>
-
-        PHP, Python ,Java JavaFx,Javascript, HTML, CSS,MYSQL,Meteor,Mongo,NodeJs,Django,JQuery,Bootstrap
-    </div>
-    <div class="step slide" id="fkive" data-x="2000" data-y="-1500">
-        <strong>Experience.</strong>
-        I haven't done any professional programming job before since i usually just program for fun but have solved many
-        programming tasks and learnt
-        through tutorials that solved real problems.
-        my experience can only be expressed by my projects..
-        and i would really love to add your organisations name here in future..
-    </div>
-    <div class="step slide" id="five" data-x="3000" data-y="-1500">
-        <strong>Networks.</strong>
-
-        <div id="sm" class="pane" data-x="0" data-y="0">
-            <style type="text/css">
-            .social{
-                width: 100px;
-                height: 100px;
-            }
-
-            </style>
-            <a href="http://www.facebook.com/bondieki2"><img class="social l" src="img/social/facebook.png"></a>
-            <a href="https://instagram.com/danleyb2/"><img class="social l" src="img/social/instagram.png"></a>
-            <a href="https://twitter.com/brian_danley"><img class="social l" src="img/social/twitter.png"></a>
-
-
-            <a href="http://stackoverflow.com/users/3320006/danleyb2"><img class="social r"
-                                                                           src="img/social/se-icon.png"></a>
-            <a href="https://github.com/danleyb2"><img class="social r" src="img/social/octocat.jpg"></a>
-            <a href="https://plus.google.com/u/0/+BrianNyaundi/"><img class="social r"
-                                                                      src="img/social/google.png"></a>
-            <a href="#">checkio</a>
-            <a href="#">FreecodeCamp</a>
-            <a href="#">Linked In</a>
-            <a href="#">OutLook</a>
-            <a href="#">Blogger</a>
-            <a href="#">Flicker</a>
-            <a href="#">codepen</a>
-            <a href="#">newBoston</a>
-            <a href="#">HackerRank</a>
-
-        </div>
-        <div id="sm2" class="pane" data-x="0" data-y="500">
-            <strong>last activities.</strong>
-        </div>
-    </div>
-    <div class="step slide" id="six" data-x="4000" data-y="-1500">
-        <strong>Contact.</strong>
-        <div class="pane form" data-x="0" data-y="0">
-            <strong>Leave Me a Message.</strong>
-            <form id="send-message">
-
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" class="form-control" placeholder="Your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="form-control" placeholder="Your email address">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="form-control" placeholder="Message"></textarea>
-                    <input type="submit" value="send" class="form-control">
-                </div>
-
-            </form>
-        </div>
-        <div class="pane map" data-x="0" data-y="500">
-            <strong>My Location.</strong>
-             <!-- Map -->
+        <!-- Contact -->
+        <div id="contact">
             <div id="map"></div>
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3 class="main-heading"><span>Contact info</span></h3>
+                <ul>
+                    <li class="my-name"></li>
+                    <li class="my-address"></li>
 
+                    <li class="my-home"><br/><br/></li>
+                    <li class="my-phone"></li>
+                    <li class="my-email"><a href="mailto:ndieksman@gmail.com"></a>loading email address ..</li>
+                    <li><a href="http://danleyb2.github.io">homepage</a></li>
+                </ul>
+            </div>
+            <!-- /Contact Info -->
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3 class="main-heading"><span>Let's keep in touch</span></h3>
+                <div id="contact-status"></div>
+                <form action="" id="contactform">
+                    <p>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" class="input">
+                    </p>
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input type="text" name="email" class="input">
+                    </p>
+                    <p>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" cols="88" rows="6" class="textarea"></textarea>
+                    </p>
+                    <input type="submit" name="submit" value="Send your message" class="submit">
+                </form>
+            </div>
+            <!-- /Contact Form -->
         </div>
-    </div>
-    <div class="step slide" id="seven" data-x="5000" data-y="-1500">
-        <strong>Thanks To.</strong><br>
-
-        You love how this looks? <a href="https://github.com/danleyb2/nyaundibrian">Fork it on GitHub.</a>
+        <!-- /contact -->
 
     </div>
+    <!-- /Content -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="copyright">Copyright © 2016 <span class="my-name"></span></div>
+    </div>
+    <!-- /Footer -->
 
 </div>
-<script type="text/javascript" src="js/impress.js"></script>
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
-    mixpanel.init("ff06d85a71cb339fae56cb31a51bce45");
-    mixpanel.track('visit');
+<!-- /Container -->
 
-    impress('impress', 'step').init(false);
-    impress('two', 'pane').init2(true);
-    impress('one', 'pane').init2(true);
-    impress('six', 'pane').init2(true);
-    impress('five', 'pane').init2(true);
-</script>
 </body>
+
 </html>
