@@ -80,9 +80,10 @@ $.ajax({
     //data : { load : true, id : id },
     type: 'GET',
     dataType: 'json',
-    timeout: 1000,
-    error: function () {
-        //console.log('data load error');
+    //timeout: 1000,
+    error: function (e) {
+        console.log('site data load error');
+        console.log(e);
     },
     success: function (data) {
         //console.log(data);
