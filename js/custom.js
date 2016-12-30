@@ -204,10 +204,10 @@ jQuery(document).ready(function () {
     $contactform.submit(function () {
         $.ajax({
             type: "POST",
-            url: "php/contact.php",
+            url: "http://danleyb2.pythonanywhere.com/pa/send_message/",
             data: $(this).serialize(),
             success: function (msg) {
-                if (msg == 'SEND') {
+                if (msg.sender_name /*== 'SEND'*/) {
                     response = '<div class="success">' + $success + '</div>';
                 }
                 else {
