@@ -11,11 +11,11 @@ function updateSite(data) {
     $('.my-img').attr('src', temp['info']['icon']);
 
     //contact data
-    $('.my-email').html('<a href="mailto:' + temp['contact']['email'] + '"></a>' + temp['contact']['email']);
-    $('.my-phone').text(temp['contact']['phone']);
-    $('.my-home').text(temp['contact']['home']);
-    $('.my-address').text(temp['contact']['address']);
-    //$('.my-home').text(data['']);
+    $('.my-email').html('<a href="mailto:' + temp['contacts'][0]['email'] + '"></a>' + temp['contacts'][0]['email']);
+    $('.my-phone').text(temp['contacts'][0]['phone']);
+    $('.my-home').text(temp['contacts'][0]['home']);
+    $('.my-address').text(temp['contacts'][0]['address']);
+    //$('.my-home').text(data[''])0;
 
 
     $('.my-title').text(temp['title']);
@@ -204,7 +204,7 @@ jQuery(document).ready(function () {
     $contactform.submit(function () {
         $.ajax({
             type: "POST",
-            url: "http://danleyb2.pythonanywhere.com/pa/send_message/",
+            url: "http://danleyb2.pythonanywhere.com/send_message/",
             data: $(this).serialize(),
             success: function (msg) {
                 if (msg.sender_name /*== 'SEND'*/) {
