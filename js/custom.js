@@ -75,7 +75,7 @@ function updateSite(data) {
 
 $.ajax({
 
-    url: 'http://danleyb2.pythonanywhere.com/pa/site_data/',
+    url: 'http://danleyb2.pythonanywhere.com/site_data/',
     //url:'site_data.json',
     //data : { load : true, id : id },
     type: 'GET',
