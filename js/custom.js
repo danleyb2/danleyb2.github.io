@@ -204,6 +204,9 @@ jQuery(document).ready(function () {
     $contactform.submit(function () {
         $.ajax({
             type: "POST",
+            headers:{
+                "Authorization":"token cca39fe548a5a3ad54d82f636c52e8557daa4363"
+            },
             url: "http://danleyb2.pythonanywhere.com/send_message/",
             data: $(this).serialize(),
             success: function (msg) {
