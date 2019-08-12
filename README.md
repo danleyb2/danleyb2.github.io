@@ -1,3 +1,1 @@
-# nyaundibrian @danleyb2
-___
-### My Personal Website
+# My Personal Homepage
