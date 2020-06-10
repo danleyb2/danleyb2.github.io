@@ -15,4 +15,8 @@ bundle exec jekyll server
 
 Production environment use the following command.
 
-JEKYLL_ENV=production bundle exec jekyll build
+```bash
+
+JEKYLL_ENV=production bundle exec jekyll server
+
+```
