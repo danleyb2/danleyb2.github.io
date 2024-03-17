@@ -1,17 +1,13 @@
-# Blog and Personal Homepage
-
+# Website and Blog
 Static site built using Jekyll
 
-
 ## Run
-
 Development
 
 ```bash
 bundle exec jekyll server
  
  ```
-
 
 Production environment use the following command.
 
