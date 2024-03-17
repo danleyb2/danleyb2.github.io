@@ -19,13 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: danleyb2
-email: danleyb2@gmail.com
+email: contact@danleyb2.dev
 description: >- # this means to ignore newlines until "baseurl:"
   Software Developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://danleyb2.online" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://danleyb2.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: danleyb2
 github_username:  danleyb2
+
+header_pages:
+  - blog.html
+  - projects.html
 
 # Build settings
 theme: minima
@@ -61,3 +65,6 @@ disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   shortname: danleyb2
+
+minima:
+  skin: classic
