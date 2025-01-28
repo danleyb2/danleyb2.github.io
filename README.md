@@ -4,6 +4,16 @@ Static site built using Jekyll
 ## Run
 Development
 
+Install Ruby 3.1.4 using RVM 
+```shell
+rvm use 3.1.4
+```
+
+Bundle Install
+```shell
+bundle install
+```
+
 ```bash
 bundle exec jekyll server
  
