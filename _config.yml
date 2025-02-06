@@ -30,6 +30,7 @@ github_username:  danleyb2
 header_pages:
   - blog.html
   - projects.html
+  - about.html
 
 # Build settings
 theme: minima
