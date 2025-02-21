@@ -9,13 +9,6 @@ layout: default2
     display: none;
   }
 
-  .homepage-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
   .social-icon {
     margin: 0 10px;
   }
@@ -24,41 +17,154 @@ layout: default2
 
 <div class="row meta">
   <div class="col-xs-12 text-center">
-    <img src='{{ "/assets/images/me.jpg" | relative_url }}' alt="Self Portrait" class="rounded-circle homepage-image">
-  </div>
-  <div class="col-xs-12 text-center">
     <h1 class="single-title">Nyaundi Brian</h1>
   </div>
 </div>
 
 <div class="row entry-content">
 
-  <div class="col-sm-8 col-sm-offset-2 text-justify">
+  <div class="col-sm-8 col-sm-offset-2 text-center">
     <p>
-      Hello, I'm Nyaundi Brian, a Full-Stack developer and electronics enthusiast.
-      I am currently at <a href="https://platerecognizer.com/">Platerecognizer</a> building Vision AI models and
-      creating integrations around them such as APIs, sites and scripts.
-      I was previously an Implementations Lead at InterIntel Technologies across their various products such as Nenasasa
-      (a Bulk SMS Platform) and Mipay (a Payment Gateway).
+      I'm Nyaundi Brian, a Full-Stack developer and electronics enthusiast.
     </p>
 
   </div>
 
-  <div class="col-sm-8 col-sm-offset-2 text-center ">
-    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fa fa-facebook social-icon"></i></a>
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa fa-linkedin social-icon"></i></a>
-    <a href="https://stackoverflow.com/users/yourprofile" target="_blank"><i class="fa fa-stack-overflow social-icon"></i></a>
-    <a href="https://github.com/danleyb2" target="_blank"><i class="fa fa-github social-icon"></i></a>
-    <a href="https://twitter.com/danleyb2" target="_blank"><i class="fa fa-twitter social-icon"></i></a>
-    <a href="mailto:contact@danleyb2.dev"><i class="fa fa-envelope social-icon"></i></a>
-  </div>
-
-  <div class="col-xs-12 visible-sm">
+  <!-- This is commented out because it appears on small devices and ruins the UI  -->
+   
+  <!-- <div class="col-xs-12 visible-sm d-none">
     <br>
     <p>
       <img class="img-responsive img-circle center-block" src='{{ "/assets/images/me.jpg" | relative_url }}'
         alt="image-alternative" style="max-height: 100px;">
     </p>
+  </div> -->
+
+  <div class="col-xs-12">
+    <div class="clearfix"></div>
+            <h3 id="browser_extensions" style="padding-top: 40px;">
+              Latest Posts
+            </h3>
+            <div class="row">
+                <div class="col-sm-1 hidden-xs mb-4">
+                    <a href="#">
+                        <img src="/static/images/f_projects/django.686a16796bfa.png" class="img-responsive img-rounded">
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <p>
+                      Recent Posts from my blog
+                    </p>
+                </div>
+            </div>
+            <div class="row col-6">
+
+              {% for post in site.posts %}
+              <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
+                  <h5 style="margin-bottom: 0px;">
+                      <a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a>
+                  </h5>
+                  <p>
+                      <a href="{{ post.url }}" style="text-decoration: none;">
+                          <span class="visible-xs-inline d-block d-sm-none">{{ post.excerpt | strip_html | truncatewords: 20 }}</span>
+                          <span class="hidden-xs  d-none d-sm-block">{{ post.excerpt | strip_html | truncatewords: 20 }}</span>
+                      </a>
+                  </p>
+              </div>
+              {% endfor %}
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="/blog" class="btn">More</a>
+            </div>
+
+            <h3 id="django" style="padding-top: 40px;">Projects and Experience</h3>
+            <div class="row">
+                <div class="col-sm-1 hidden-xs mb-4">
+                    <a href="#">
+                        <img src="/static/images/f_projects/django.686a16796bfa.png" class="img-responsive img-rounded">
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <p>
+                      My key projects and achievements from work, freelancing and open source contributions
+                    </p>
+                </div>
+            </div>
+            <div class="row col-6">
+                <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
+                    <h5 style="margin-bottom: 0px;">
+                        <a href="https://github.com/danleyb2/web-component" style="text-decoration: none;">Web
+                            Component</a>
+                    </h5>
+                    <p>
+                        <a href="https://github.com/danleyb2/web-component" style="text-decoration: none;">
+                            <span class="visible-xs-inline d-block d-sm-none">Starter Project for building a web
+                                component using lit-element</span>
+                            <span class="hidden-xs  d-none d-sm-block">Starter Project for building a web component
+                                using lit-element</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="/projects" class="btn">See all projects</a>
+            </div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="https://www.linkedin.com/in/danleyb2/" target="_blank" class="btn">CV</a>
+            </div>
+
+            <h3 id="debian" style="padding-top: 40px;">
+                Mobile
+            </h3>
+            <div class="row">
+                <div class="col-sm-1 hidden-xs">
+                    <a href="#">
+                        <img src="/static/images/f_projects/debian.ac5b48a3136c.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-10">
+                    <p>
+                        I have been an occasional android developer since 2014
+                    </p>
+                </div>
+            </div>
+            <div class="row col-6">
+
+                <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
+                    <h5 style="margin-bottom: 0px;">
+                        <a href="#" style="text-decoration: none;">Kamari</a>
+                    </h5>
+                    <p>
+                        <a href="https://github.com/danleyb2/kamari" style="text-decoration: none;">
+                            <span class="visible-xs-inline d-block d-sm-none">A Simple 2D Card Game</span>
+                            <span class="hidden-xs  d-none d-sm-block">A Simple 2D Card Game</span>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
+                    <h5 style="margin-bottom: 0px;">
+                        <a href="https://github.com/danleyb2/ussds-android" style="text-decoration: none;">Ussds</a>
+                    </h5>
+                    <p>
+                        <a href="https://github.com/danleyb2/ussds-android" style="text-decoration: none;">
+                            <span class="visible-xs-inline d-block d-sm-none">Utility app for finding USSD
+                                shortcodes</span>
+                            <span class="hidden-xs  d-none d-sm-block">Utility app for finding USSD shortcodes</span>
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="/blog" class="btn">More</a>
+            </div>
   </div>
 
 
