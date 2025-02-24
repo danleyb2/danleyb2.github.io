@@ -1,132 +1,80 @@
 ---
 layout: default2
 # comments: false
-
 ---
 
-
-<article itemscope itemtype="http://schema.org/BlogPosting" >
-
+<article itemscope itemtype="http://schema.org/BlogPosting">
   <div class="row meta">
     <div class="col-md-12">
       <h1 class="text-center single-title">
         <span class="visible-xs-inline d-block d-sm-none" itemprop="name headline">{{ page.title | escape }}</span>
-        <span class="hidden-xs  d-none d-sm-block">{{ page.title | escape }}</span>
+        <span class="hidden-xs d-none d-sm-block">{{ page.title | escape }}</span>
       </h1>
       <ul class="list-inline meta text-center">
         {%- if page.author -%}
         <li itemprop="author" itemscope itemtype="http://schema.org/Person">by <a href="#" class="author-name" itemprop="name">{{ page.author }}</a></li>
-        {%- endif -%}</p>
-
+        {%- endif -%}
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <li title="{{ page.date | date: date_format }}">
-          <time  datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {{ page.date | date: date_format }}
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            Updated on {{ page.date | date: date_format }}
           </time>
         </li>
       </ul>
     </div>
   </div>
 
-
   <div class="row featured-image">
     <div class="col-md-12">
       <!--<img class="img-responsive"-->
-                  <!--src="https://lamby-www.s3.amazonaws.com:443/yadt/blog.Post/cover/md/400.jpeg?H23zb6wv"-->
-                  <!--alt="image-alternative">-->
     </div>
   </div>
 
-
   <div class="row entry-content">
-    <div class="col-sm-8 col-md-7 single-content">
+    <div class="col-md-8 col-md-offset-2 single-content">
       <div itemprop="articleBody">
         {{ content }}
       </div>
 
-
       <div class="entry-meta">
-
-        <p class="post-categories">Posted 9 March, 2019</p>
-
-
+        <p class="post-categories">Posted {{ page.date | date: date_format }}</p>
         <p class="post-tags hidden-xs">
-
           <a href="/blog/category/reviews">Reviews</a>
-
         </p>
-
       </div>
-    </div>
-
-    <div class="col-md-3 col-md-offset-1 col-sm-4">
-      <aside class="widget widget-about-me">
-        <div class="widget-title hidden-sm">
-          <h3>About Me</h3>
-        </div>
-        <div class="about-me">
-          <p class="bio mb-8">
-            Nyaundi Brian is an independent freelance software developer and open source contributor. Formerly an implementations
-             Lead at <a href="https://interintel.co.ke">InterIntel</a>, i
-            am currently highly active on the <a href="https://sifhic.com/">Sifhic</a> project.
-          </p>
-        </div>
-      </aside>
-
-      <aside class="widget widget-about-me hidden-xs">
-        <p>
-          <a href="/">
-            <img src='/assets/images/me2.jpg' class="img-responsive img-rounded">
-          </a>
-        </p>
-
-      </aside>
-
-
-      <aside class="widget widget-latest-posts">
-        <div class="widget-title">
-          <h3>Latest Posts</h3>
-        </div>
-
-        <ul class="list-unstyled">
-          {% for post in site.posts limit:5 %}
-
-          <li>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-date">{{ post.date | date: date_format }} </span>
-            <a href="{{ post.url | relative_url }}" class="post-title">
-              <span class="visible-xs-inline d-block d-sm-none">{{ post.title | escape }}</span>
-              <span class="hidden-xs  d-none d-sm-block">{{ post.title | escape }}</span>
-            </a>
-          </li>
-
-          {% endfor %}
-
-        </ul>
-      </aside>
-
-
     </div>
   </div>
 
-
   <div class="row comments-headline headline">
     <div class="col-md-push-2 col-sm-6 heading">
-
     </div>
   </div>
 
   <div class="row comments" id="comments">
     <div class="col-md-8 col-md-offset-2 comment-form-wrapper">
-
       {%- if site.disqus.shortname -%}
       {%- include disqus_comments.html -%}
       {%- endif -%}
     </div>
-
-
   </div>
 
+  <div class="row related-posts">
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Related Posts</h3>
+      <ul class="list-unstyled">
+        {% for post in site.posts limit:5 %}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-date">{{ post.date | date: date_format }} </span>
+          <a href="{{ post.url | relative_url }}" class="post-title">
+            <span class="visible-xs-inline d-block d-sm-none">{{ post.title | escape }}</span>
+            <span class="hidden-xs d-none d-sm-block">{{ post.title | escape }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
