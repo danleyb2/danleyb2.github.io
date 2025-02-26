@@ -4,71 +4,121 @@ layout: default2
 ---
 
 <style>
-  .draft{
-    border:1px solid red;
+  .draft {
+    border: 1px solid red;
     display: none;
   }
+
+  .social-icon {
+    margin: 0 10px;
+  }
+
 </style>
 
+<div class="row meta">
+  <div class="col-xs-12 text-center">
+    <h1 class="single-title">Nyaundi Brian</h1>
+  </div>
+</div>
+
 <div class="row entry-content">
-    <div class="col-sm-3 col-lg-4 hidden-xs">
-      <p>
-        <img class="img-responsive center-block"
-             src='{{ "/assets/images/me.jpg" | relative_url }}'
-             alt="image-alternative">
-      </p>
-    </div>
-    <div class="col-sm-8 col-md-offset-1 col-lg-7 ">
-      <p>
-        <strong>
-          I'm Nyaundi Brian, a software developer and electronics engineer.
-        </strong>
-      </p>
-      <p class="">
-        I am currently a full time <a href="https://www.upwork.com/freelancers/~016bdcaaac2069553c">freelancer</a>
-        working on projects across platforms such as the web, backend and android. <br>
-        I see time as the most essential resource in software development and that's why i am building <a href="https://sifhic.com">Sifhic</a>
-        that will help me save it though automation, performance and reliability while still maintaining security and best practices.
-      </p>
-      <p class="">
-        I'm the primary author of <a href="projects.html">dozens
-        of free and open source projects</a> and contributor to 10s of
-        others. I am also the architect and maintainer of a number of web
-        services under Sifhic.
-      </p>
-      <p class="">
-        I previously worked as an Implementations Lead at
-        <a href="https://interintel.co.ke">InterIntel Technologies</a>
-        across their various products such as
-        <a href="https://nenasasa.com">Nenasasa</a> (a Bulk SMS Platform) and <a href="https://gomipay.com">Mipay</a> (a Payment Gateway).
-        <br>
-        I'm highly experienced in full-stack web development with a focus and love for the
-        backend where i mainly use
-        <a href="https://www.djangoproject.com/">Django</a> or <a href="https://expressjs.com/">Node Express</a>
-        on linux (Debian).
-        <br>
-        Find my latest programming interests on my
-        <a href="/blog">blog</a>.
-      </p>
 
-      <p class="">
-        Contact me at
-        <a href="mailto:contact@danleyb2.dev">contact@danleyb2.dev</a> or
-        follow me on X
-        <a href="https://x.com/danleyb2">@danleyb2</a>.
-      </p>
-
-    </div>
-
-    <div class="col-xs-12 visible-sm">
-      <br>
-      <p>
-        <img class="img-responsive img-circle center-block"
-             src='{{ "/assets/images/me.jpg" | relative_url }}' alt="image-alternative"
-             style="max-height: 100px;">
-      </p>
-    </div>
-
+  <div class="col-sm-8 col-sm-offset-2 text-center">
+    <p>
+      I'm Nyaundi Brian, a Full-Stack developer and electronics enthusiast.
+    </p>
 
   </div>
 
+  <!-- This is commented out because it appears on small devices and ruins the UI  -->
+   
+  <!-- <div class="col-xs-12 visible-sm d-none">
+    <br>
+    <p>
+      <img class="img-responsive img-circle center-block" src='{{ "/assets/images/me.jpg" | relative_url }}'
+        alt="image-alternative" style="max-height: 100px;">
+    </p>
+  </div> -->
+
+  <div class="col-xs-12">
+    <div class="clearfix"></div>
+            <h3 id="browser_extensions" style="padding-top: 40px;">
+              Latest Posts
+            </h3>
+            <div class="row">
+                <div class="col-sm-1 hidden-xs mb-4">
+                    <a href="#">
+                        <img src="/static/images/f_projects/django.686a16796bfa.png" class="img-responsive img-rounded">
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <p>
+                      Recent Posts from my blog
+                    </p>
+                </div>
+            </div>
+            <div class="row col-6">
+
+              {% for post in site.posts %}
+              <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
+                  <h5 style="margin-bottom: 0px;">
+                      <a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a>
+                  </h5>
+                  <p>
+                      <a href="{{ post.url }}" style="text-decoration: none;">
+                          <span class="visible-xs-inline d-block d-sm-none">{{ post.excerpt | strip_html | truncatewords: 20 }}</span>
+                          <span class="hidden-xs  d-none d-sm-block">{{ post.excerpt | strip_html | truncatewords: 20 }}</span>
+                      </a>
+                  </p>
+              </div>
+              {% endfor %}
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="/blog" class="btn">More</a>
+            </div>
+
+            <h3 id="django" style="padding-top: 40px;">Projects and Experience</h3>
+            <div class="row">
+                <div class="col-sm-1 hidden-xs mb-4">
+                    <a href="#">
+                        <img src="/static/images/f_projects/django.686a16796bfa.png" class="img-responsive img-rounded">
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <p>
+                      My key projects and achievements from work, freelancing and open source contributions
+                    </p>
+                </div>
+            </div>
+            <div class="row col-6">
+                <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
+                    <h5 style="margin-bottom: 0px;">
+                        <a href="https://github.com/danleyb2/web-component" style="text-decoration: none;">Web
+                            Component</a>
+                    </h5>
+                    <p>
+                        <a href="https://github.com/danleyb2/web-component" style="text-decoration: none;">
+                            <span class="visible-xs-inline d-block d-sm-none">Starter Project for building a web
+                                component using lit-element</span>
+                            <span class="hidden-xs  d-none d-sm-block">Starter Project for building a web component
+                                using lit-element</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="/projects" class="btn">See all projects</a>
+            </div>
+            <div class="text-center" style="padding-top: 20px;">
+              <a href="https://www.linkedin.com/in/danleyb2/" target="_blank" class="btn">CV</a>
+            </div>
+          
+  </div>
+
+
+</div>
