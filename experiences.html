@@ -1,0 +1,28 @@
+---
+layout: default2
+title: Experience
+permalink: /experience
+
+---
+
+{% assign selected_status = "Active" %}
+
+{% for experience in site.experiences %}
+    {% if experience.status == selected_status %}
+        <article>
+            <h2>
+                <a href="{{ experience.url }}">
+                    {{ experience.title }}
+                </a>
+            </h2>
+            <p>{{ experience.date | date: "%B %Y" }}</p>
+            <p>{{ experience.description }}</p>
+            <p>
+                {% for tag in experience.tags %}
+                #{{ tag }}
+                {% endfor %}
+            </p>
+        </article>
+    {% endif %}
+
+{% endfor %}

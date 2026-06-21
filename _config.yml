@@ -30,6 +30,7 @@ github_username:  danleyb2
 header_pages:
   - blog.html
   - projects.html
+  - experiences.html
   - about.html
 
 # Build settings
@@ -58,6 +59,24 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+collections:
+  projects:
+    output: true
+  experiences:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: experiences
+    values:
+      layout: experiences
+
 
 google_analytics: "UA-113329820-1"
 
