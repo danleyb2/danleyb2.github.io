@@ -6,7 +6,7 @@ Development
 
 Install Ruby 3.1.4 using RVM 
 ```shell
-rvm use 3.1.4
+rvm use 3.2.0
 ```
 
 Bundle Install
