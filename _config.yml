@@ -21,7 +21,7 @@
 title: danleyb2
 email: contact@danleyb2.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Developer.
+  FullStack Software Developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://danleyb2.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: danleyb2
@@ -68,4 +68,4 @@ disqus:
   shortname: danleyb2
 
 minima:
-  skin: classic
+  skin: auto

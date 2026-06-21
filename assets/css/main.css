@@ -2515,7 +2515,7 @@ article.single-page {
 .search-form {
   margin:40px 5px;
   font:normal 12px sans-serif;
-  box-shadow:1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  box-shadow:1px 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width:767px) {
