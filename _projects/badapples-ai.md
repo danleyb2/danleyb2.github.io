@@ -21,3 +21,6 @@ technologies:
 Developed a simple admin dashboard web application using React
 
 > TODO check date period in freelancing experiences.
+
+
+Developed a basic admin dashboard web application using React

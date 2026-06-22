@@ -17,12 +17,4 @@ status: Active
   
 ---
 
-Software Quality Assurance Tester
-
-ParkPow · Contract
-
-Oct 2020 - Present · 5 yrs 9 mos
-
-California, United States
-
-Testing Recognition SDK updates, Building Integrations, Creating Documentation and Supporting Customers
+Developed and still maintains a leads generation web application. http://salesleadgen.com/

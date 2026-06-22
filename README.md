@@ -1,6 +1,4 @@
-# Website and Blog
-Static site built using Jekyll
-
+Personal Site and Blog
 ## Run
 Development
 

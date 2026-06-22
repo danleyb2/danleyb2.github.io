@@ -1,21 +1,15 @@
 ---
 layout: project
-
-title: BulkSMS
-date: 2023-10-15
+title: Bulk SMS Portal
+date: 2017-01-01
 description: Bulk SMS Portal
-
 tags:
   - Django
-  
 status: Active
-
 github: https://github.com/danleyb2/layout
-
 technologies:
   - Django
   - Python
-  
 ---
 
 A bulk sms portal

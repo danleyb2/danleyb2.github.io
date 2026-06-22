@@ -1,25 +1,19 @@
 ---
 layout: project
-
 title: ABSR
 date: 2023-10-15
-description: An android app that tracks the best sellers rank of specific products from
-Amazon
-
+description: Track Amazon best sellers rank of specific products
 tags:
   - PHP
-  
 status: Active
-
-github: https://github.com/danleyb2/layout
-
+github:
 technologies:
   - PHP
   - Backend
-  
 ---
 
-An android app that tracks the best sellers rank of specific products from
-Amazon
+Web version of  [[absr-android]] 
+
+
 
 > TODO time period Jan 2017–Present

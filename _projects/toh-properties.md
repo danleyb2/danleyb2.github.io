@@ -22,6 +22,12 @@ Developed a scraper for Singapore property listing sites. The
 scrapping ran periodically and the data was then saved into a MYSQL database and
 would be queried, filtered, exported from a central dashboard web application
 
+
+Developed a scraper for Singapore property listing sites. The
+scrapping ran periodically and the data was then saved into a MYSQL database and
+would be queried, filtered, exported from a central dashboard web application
+
+
 > TODO time period Jan 2017–Present
 
 > TODO check date period in freelancing experiences.

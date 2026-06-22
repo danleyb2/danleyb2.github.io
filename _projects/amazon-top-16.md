@@ -1,7 +1,7 @@
 ---
 layout: project
 
-title: AMZtop16
+title: Amazon top 16
 date: 2023-10-15
 description: A starter template for PHP projects.
 
@@ -18,7 +18,9 @@ technologies:
   
 ---
 
-● AMZtop16 - Chrome plugin that scrapes extra details from Amazon products search
+Amazon top 16 - Chrome plugin that scrapes extra details from Amazon products search
 
+Developed a chrome plugin that scrapes extra details from Amazon
+products search
 
 > TODO time period Jan 2017–Present
