@@ -14,6 +14,7 @@ status: Active
 
 github: https://github.com/sifhic/django
 
+is_highlighted: true
 
 technologies:
   - Python

@@ -4,12 +4,14 @@ title: Salesleadgen
 date: 2023-10-15
 description: LinkedIn and Sales navigator scrapper
 tags:
-  - PHP
+  - Python
 status: Active
-github: https://github.com/danleyb2/layout
+github: null
 technologies:
-  - PHP
+  - Python
   - Backend
+
+
 ---
 
 Tiny layout for my PHP web projects(with clean urls)

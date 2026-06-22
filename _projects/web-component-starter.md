@@ -2,7 +2,7 @@
 layout: project
 
 title: Web Component Starter
-date: 2023-10-15
+date: 2020-02-08
 description: A starter template for Web Component projects.
 
 tags:
@@ -18,6 +18,30 @@ technologies:
   - Js
   - Frontend
 
+is_highlighted: true
+
 ---
 
-Starter Project for building a web component using `lit-element`
+A starter project for building re-usable web components using `lit-element `
+
+## Features
+- LitElement for a declarative UI, automatic updates when properties change.
+- Follows Web Components standards, works with any framework
+- Building with bundling and transpilation using polymer build 
+- Testing with [Web-Component-Tester](/projects/web-component-tester.md)
+
+## Usage
+
+Load module
+```html
+<!-- Bottom of body -->
+<script type="module" src="https://unpkg.com/@danleyb2/web-component"></script>
+```
+
+Use custom component
+```html
+
+<web-component></web-component>
+
+```
+

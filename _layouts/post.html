@@ -39,7 +39,9 @@ layout: default2
       <div class="entry-meta">
         <p class="post-categories">Posted {{ page.date | date: date_format }}</p>
         <p class="post-tags hidden-xs">
-          <a href="/blog/category/reviews">Reviews</a>
+          {% for tag in page.tags %}
+            <a href="/blog/category/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
         </p>
       </div>
     </div>

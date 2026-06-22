@@ -12,7 +12,7 @@ technologies:
   - Python
   - Django
   - Backend
-  -
+  
 ---
 
 InterIntel Technologies, Nairobi, Kenya
@@ -61,3 +61,7 @@ participated in the upgrade and development of modules for the applications.
 better collaboration tools for communication, setting up CI for a few projects and writing
 Documentations
 ● Finalised and Published the companies’ first android app to the google play store.
+
+----
+I was previously an Implementations Lead at InterIntel Technologies across their various products such as Nenasasa
+              (a Bulk SMS Platform) and Mipay (a Payment Gateway).

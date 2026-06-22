@@ -26,3 +26,15 @@ Oct 2020 - Present · 5 yrs 9 mos
 California, United States
 
 Testing Recognition SDK updates, Building Integrations, Creating Documentation and Supporting Customers
+
+
+---
+
+deep-license-plate-recognition
+
+Contributions https://github.com/parkpow/deep-license-plate-recognition/commits?author=danleyb2
+
+----
+I am currently at <a href="https://platerecognizer.com/">Platerecognizer</a> building Vision AI models and
+creating integrations around them such as APIs, sites, and scripts.
+              

@@ -28,6 +28,8 @@ layout: default2
             <div class="row col-6">
 
               {% for post in site.posts %}
+                {% if post.is_highlighted %}
+
               <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
                   <h5 style="margin-bottom: 0px;">
                       <a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a>
@@ -39,6 +41,7 @@ layout: default2
                       </a>
                   </p>
               </div>
+                {% endif %}
               {% endfor %}
 
             </div>
@@ -50,20 +53,25 @@ layout: default2
             <h3 id="django" style="padding-top: 40px;">Highlighted Projects</h3>
 
             <div class="row col-6">
+
+                {% for project in site.projects %}
+                {% if project.is_highlighted %}
+
                 <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
                     <h5 style="margin-bottom: 0px;">
-                        <a href="https://github.com/danleyb2/web-component" style="text-decoration: none;">Web
-                            Component</a>
+                        <a href="{{ project.url }}" style="text-decoration: none;">
+                            {{ project.title }}
+                        </a>
                     </h5>
                     <p>
-                        <a href="https://github.com/danleyb2/web-component" style="text-decoration: none;">
-                            <span class="visible-xs-inline d-block d-sm-none">Starter Project for building a web
-                                component using lit-element</span>
-                            <span class="hidden-xs  d-none d-sm-block">Starter Project for building a web component
-                                using lit-element</span>
+                        <a href="{{ project.url }}" style="text-decoration: none;">
+                            <span class="visible-xs-inline d-block d-sm-none">{{ project.excerpt | strip_html | truncatewords: 20 }}</span>
+                          <span class="hidden-xs  d-none d-sm-block">{{ project.excerpt | strip_html | truncatewords: 20 }}</span>
                         </a>
                     </p>
                 </div>
+                {% endif %}
+                {% endfor %}
             </div>
 
 

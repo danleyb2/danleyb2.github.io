@@ -19,7 +19,8 @@ permalink: /projects
             <p>{{ project.description }}</p>
             <p>
                 {% for tag in project.tags %}
-                #{{ tag }}
+                    <a href="/blog/category/{{ tag }}">#{{ tag }}</a>
+
                 {% endfor %}
                  <a href="{{ project.github }}" target="_blank">Github</a>
             </p>

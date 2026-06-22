@@ -2,7 +2,11 @@
 layout: post
 title:  "Lit Rich Text Editor"
 date:   2008-10-19 15:18:25 +0300
-categories: lit-element lit-html web-components
+categories: [lit-element, lit-html, web-components]
+
+is_highlighted: true
+
+
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
