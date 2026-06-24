@@ -1,7 +1,7 @@
 ---
 layout: project
 
-`title: DjangoStarter
+title: DjangoStarter
 date: 2019-06-21
 description: A starter template for Django projects.
 
