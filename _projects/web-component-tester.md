@@ -3,7 +3,7 @@ layout: project
 
 title: Web Component Starter
 date: 2020-02-08
-description: A starter template for Web Component projects.
+description: Docker image containing headless browsers for testing Web Components
 
 tags:
   - WebComponents
@@ -11,7 +11,7 @@ tags:
   
 status: Active
 
-github: https://github.com/danleyb2/web-component
+github: https://github.com/danleyb2/web-component-tester
 
 technologies:
   - WebComponents
