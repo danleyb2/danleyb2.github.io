@@ -1,36 +1,20 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: danleyb2
+title: Brian Nyaundi - Full-Stack Developer & DevOps Engineer
 email: contact@danleyb2.dev
-description: >- # this means to ignore newlines until "baseurl:"
-  FullStack Software Developer.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://danleyb2.dev" # the base hostname & protocol for your site, e.g. http://example.com
+description: >-
+  Software developer specializing in Python, JavaScript, Docker, and system reliability.
+  Currently building Vision AI integrations at PlateRecognizer.
+baseurl: ""
+url: "https://danleyb2.dev"
 twitter_username: danleyb2
-github_username:  danleyb2
+github_username: danleyb2
 
 header_pages:
   - blog.html
   - projects.html
-  #- experiences.html
+  - experiences.html
   - about.html
 
 # Build settings
@@ -39,31 +23,25 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-avatar
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+
 collections:
   projects:
     output: true
+    sort_by: date
+    sort_direction: reverse
   experiences:
     output: true
+  educations:
+    output: true
+    sort_by: date
+    sort_direction: reverse
 
 defaults:
   - scope:
@@ -75,16 +53,25 @@ defaults:
       path: ""
       type: experiences
     values:
-      layout: experiences
+      layout: experience
+  - scope:
+      path: ""
+      type: educations
+    values:
+      layout: default2
 
-
-google_analytics: "UA-113329820-1"
-
-# Disqus Comments
-disqus:
-  # Leave shortname blank to disable comments site-wide.
-  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: danleyb2
+# SEO & Social
+jekyll_seo_tag:
+  twitter:
+    username: danleyb2
+  image: /assets/images/me.jpg
+  description: "Software developer specializing in Python, JavaScript, Docker, and system reliability."
 
 minima:
   skin: auto
+social:
+  name: Brian Nyaundi
+  links:
+    - https://github.com/danleyb2
+    - https://www.linkedin.com/in/danleyb2/
+    - https://danleyb2.dev

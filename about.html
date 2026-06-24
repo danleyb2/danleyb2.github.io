@@ -1,47 +1,129 @@
 ---
 layout: default2
-title: about
+title: About
 permalink: /about
-
 ---
 
 <style>
-    .homepage-image {
-        width: 150px;
-        height: 150px;
+    .profile-image {
+        width: 180px;
+        height: 180px;
         object-fit: cover;
         border-radius: 50%;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .quick-stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+    .stat-item {
+        text-align: center;
+    }
+    .stat-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1a73e8;
+    }
+    .stat-label {
+        font-size: 0.85rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    .tech-tag {
+        background: #e8f0fe;
+        color: #1a73e8;
+        padding: 0.25rem 0.75rem;
+        border-radius: 16px;
+        font-size: 0.85rem;
+        font-weight: 500;
     }
 </style>
-<div class="row meta">
-    <div class="col-xs-12 text-center">
-        <img src='{{ "/assets/images/me.jpg" | relative_url }}' alt="Self Portrait"
-            class="rounded-circle homepage-image">
-    </div>
-</div>
 
-<div class="container-fluid">
-    <div class="row meta">
-        <div class="col-xs-12">
-            <h1 class="text-center single-title">Nyaundi Brian</h1>
+<div class="container" style="max-width: 900px;">
+    <div class="row text-center meta">
+        <img src='{{ "/assets/images/me.jpg" | relative_url }}' alt="Brian Nyaundi" class="profile-image">
+        <h1 class="single-title">Brian Nyaundi</h1>
+        <p style="font-size: 1.25rem; color: #555;">Full-Stack Developer & DevOps Engineer</p>
+    </div>
+
+    <div class="quick-stats">
+        <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Coding</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Countries Served</div>
         </div>
     </div>
-    <div class="row entry-content">
 
-        <div class="col-sm-8 col-sm-offset-2 text-justify">
+    <div class="about-grid">
+        <div>
+            <h3>👋 Who I Am</h3>
             <p>
-
-                Hey there! I’m a software developer and electronics enthusiast with current interests in Machine Learning, DevOps, and system reliability.
-                Lately, I’ve been diving deep into the world of orchestration tools and observability—exploring how to build and maintain scalable, resilient systems.
-                My current stack revolves around Python, JavaScript, Docker, and various monitoring tools, but I’m always learning and refining my approach.
-                Beyond code, I love writing about what I’m figuring out, the challenges I encounter, and how I’m navigating the ever-evolving world of DevOps and software engineering.
-                If you’re also on a similar path, I hope you find something useful here.
-
-
+                I'm a software developer and DevOps engineer currently building Vision AI integrations at 
+                <a href="https://platerecognizer.com/" target="_blank">PlateRecognizer</a>. I specialize in building scalable 
+                backend systems, Docker-based tooling, and real-time applications that solve real problems.
             </p>
-          </div>
+            <p>
+                My journey started with electrical engineering but quickly pivoted to software. Today, I work across the full stack — from Android apps and browser extensions to Django APIs and production DevOps pipelines. I'm particularly passionate about 
+                <strong>system reliability</strong>, <strong>observability</strong>, and making complex infrastructure simple for users.
+            </p>
+        </div>
 
+        <div>
+            <h3>🛠️ What I Work With</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django / DRF</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">Android (Kotlin)</span>
+                <span class="tech-tag">Linux / DevOps</span>
+                <span class="tech-tag">Observability</span>
+                <span class="tech-tag">Vision AI</span>
+            </div>
+        </div>
+
+        <div>
+            <h3>🎯 What I'm Looking For</h3>
+            <p>
+                I enjoy building things end-to-end — from design to deployment. Whether it's a Docker Desktop extension for 
+                developers, a real-time live-chat platform serving thousands of conversations, or an automated scraping tool 
+                that saves hours of manual work — I get satisfaction from shipping products that people actually use.
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem;">
+            <a href="{{ "/assets/cv-brian-nyaundi.pdf" | relative_url }}" class="btn" target="_blank">Download CV</a>
+            <a href="https://www.linkedin.com/in/danleyb2/" target="_blank" class="btn btn-outline" style="margin-left: 0.5rem;">LinkedIn</a>
+            <a href="https://github.com/danleyb2" target="_blank" class="btn btn-outline" style="margin-left: 0.5rem;">GitHub</a>
+        </div>
     </div>
-
-
 </div>

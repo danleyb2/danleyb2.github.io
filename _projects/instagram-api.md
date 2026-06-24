@@ -1,30 +1,17 @@
 ---
 layout: project
-
-title: Instagram-API
+title: Instagram-API Python Wrapper
 date: 2016-01-01
-description: A python wrapper around Instagram's private API
-
+description: Python wrapper around Instagram's private API with authentication, media scraping, and story viewing.
 tags:
   - Python
-  - PHP
-  
 status: Active
 is_highlighted: true
-
 github: https://github.com/danleyb2/instagram-API
-
 technologies:
   - Python
-  - PHP
-
-type: personal
-  
 ---
 
-Python wrapper around Instagram's private API. It is merely a translation from a **PHP** [repo](https://github.com/mgp25/Instagram-API)
+Python wrapper around Instagram's private API. Originally a translation from the [PHP version](https://github.com/mgp25/Instagram-API) by mgp25.
 
-
-pypi package https://pypi.python.org/pypi/instagram-python/1.2.1
-
-
+Available on [PyPI](https://pypi.python.org/pypi/instagram-python/1.2.1).
