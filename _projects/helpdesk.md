@@ -2,13 +2,14 @@
 layout: project
 
 title: helpdesk
-date: 2023-10-15
-description: A starter template for PHP projects.
+date: 2019-08-05
+description: Realtime LiveChat widget application for websites. 
 
 tags:
   - Node 
   - Express
   - Socket.io
+  - MongoDB
   
 status: Active
 
@@ -18,6 +19,9 @@ technologies:
   - Node
   - Socket.io
   - Backend
+  - SMTP
+  - mkdocs
+  - MongoDB
 
 is_highlighted: true
 
@@ -31,12 +35,7 @@ Realtime LiveChat widget application for websites.
 - multiple departments per organization
 - per department support email
 - Live chat plugin support with theme customizations
-- 2 way email conversation
+- 2 way email conversation using https://github.com/danleyb2/helpdesk_mail_server
 - HelpCenter (created from conversations)
 - Bots
 
-
-#### Requirements
-
-MongoDB v3.2+. - Database
-mkdocs - documentation
