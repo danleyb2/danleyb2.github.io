@@ -6,7 +6,7 @@ date: 2020-02-08
 description: A starter template for Web Component projects.
 
 tags:
-  - Web Component
+  - WebComponents
   - Js
   
 status: Active
@@ -14,7 +14,7 @@ status: Active
 github: https://github.com/danleyb2/web-component
 
 technologies:
-  - Web Components
+  - WebComponents
   - Js
   - Frontend
 

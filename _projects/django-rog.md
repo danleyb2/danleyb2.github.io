@@ -6,7 +6,9 @@ date: 2016-01-01
 description: django packages development environment.
 
 tags:
-  - Python, Django, GitHub API
+  - Python
+  - Django, 
+  - API
 
   
 status: Active
@@ -14,9 +16,10 @@ status: Active
 github: https://github.com/kenyansongithub/django-rog
 
 technologies:
-  - Python, Django, GitHub API
+  - Python
+  - Django
+  - API
 
-  
 ---
 
 An Events tracker of activities of people from a given location on GitHub
