@@ -27,6 +27,3 @@ is_archived: true
 
 Docker image containing headless browsers for testing Web Components.
 
-
- 
-

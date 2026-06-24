@@ -7,7 +7,9 @@ permalink: /projects
 
 {% assign selected_status = "Active" %}
 
-{% for project in site.projects %}
+{% assign projects = site.projects | sort: 'date' | reverse %}
+
+{% for project in projects %}
     {% if project.status == selected_status %}
         <article>
             <h2>
