@@ -18,9 +18,12 @@ technologies:
   - Js
   - Frontend
 
-is_highlighted: true
+is_highlighted: false
+is_archived: true
 
 ---
+
+> Archived in favor of [LitElement TypeScript starter](https://github.com/lit/lit-element-starter-ts)
 
 A starter project for building re-usable web components using `lit-element `
 
