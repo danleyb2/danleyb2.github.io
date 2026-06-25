@@ -4,86 +4,110 @@ layout: default2
 ---
 
 <style>
-  .draft {
-    border: 1px solid red;
-    display: none;
-  }
-
-  .social-icon {
-    margin: 0 10px;
-  }
-
+    .hero {
+        text-align: center;
+        padding: 4rem 1rem 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+        margin: 3rem 0 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e8f0fe;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 1.5rem;
+        margin: 0 auto;
+    }
+    .project-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 1.25rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+        background: #fff;
+    }
+    .project-card:hover {
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+    }
+    .project-card h4 {
+        margin: 0 0 0.5rem;
+    }
+    .project-card h4 a {
+        color: #1a73e8;
+        text-decoration: none;
+    }
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.75rem;
+    }
+    .project-tag {
+        background: #f1f3f4;
+        color: #555;
+        padding: 0.15rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.78rem;
+    }
+    .post-card {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+    }
+    .post-card .date {
+        color: #999;
+        font-size: 0.85rem;
+    }
 </style>
 
-<div class="row entry-content">
+<div class="hero">
+    <h1>Brian Nyaundi</h1>
+    <p>Full-Stack Developer & DevOps Engineer building reliable systems and developer tooling at <a href="https://platerecognizer.com/" target="_blank">PlateRecognizer</a>.</p>
+    <a href="/about" class="btn">Learn More</a>
+</div>
 
+<div class="container" style="max-width: 900px; margin: 0 auto;">
 
+    <h2 class="section-title">📝 Recent Articles</h2>
+    {% for post in site.posts limit:5 %}
+    <div class="post-card">
+        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h4 style="margin: 0.25rem 0;"><a href="{{ post.url }}" style="color:#1a73e8; text-decoration:none;">{{ post.title }}</a></h4>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </div>
+    {% endfor %}
+    <div class="text-center"><a href="/blog" class="btn">View All Articles</a></div>
 
-  <div class="col-xs-12">
-
-            <h3 id="browser_extensions" style="padding-top: 40px;">
-              Latest Posts
-            </h3>
-
-            <div class="row col-6">
-
-              {% for post in site.posts %}
-                {% if post.is_highlighted %}
-
-              <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
-                  <h5 style="margin-bottom: 0px;">
-                      <a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a>
-                  </h5>
-                  <p>
-                      <a href="{{ post.url }}" style="text-decoration: none;">
-                          <span class="visible-xs-inline d-block d-sm-none">{{ post.excerpt | strip_html | truncatewords: 20 }}</span>
-                          <span class="hidden-xs  d-none d-sm-block">{{ post.excerpt | strip_html | truncatewords: 20 }}</span>
-                      </a>
-                  </p>
-              </div>
-                {% endif %}
-              {% endfor %}
-
+    <h2 class="section-title">⭐ Featured Projects</h2>
+    <div class="project-grid">
+    {% for project in site.projects %}
+        {% if project.is_highlighted == true and project.status == 'Active' %}
+        <div class="project-card">
+            <h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
+            <p style="font-size: 0.9rem; color: #666;">{{ project.description | truncatewords: 25 }}</p>
+            {% if project.github %}
+            <span class="project-tag"><a href="{{ project.github }}" target="_blank" style="color:#1a73e8;text-decoration:none;">GitHub ↗</a></span>
+            {% endif %}
+            <div class="project-tags">
+                {% for tag in project.tags %}<span class="project-tag">{{ tag }}</span>{% endfor %}
             </div>
-            <div class="clearfix"></div>
-            <div class="text-center" style="padding-top: 20px;">
-              <a href="/blog" class="btn">More</a>
-            </div>
-
-            <h3 id="django" style="padding-top: 40px;">Highlighted Projects</h3>
-
-            <div class="row col-6">
-
-                {% for project in site.projects %}
-                {% if project.is_highlighted %}
-
-                <div class="col-lg-4 col-sm-6" style="padding-top: 40px; margin-bottom: 40px;">
-                    <h5 style="margin-bottom: 0px;">
-                        <a href="{{ project.url }}" style="text-decoration: none;">
-                            {{ project.title }}
-                        </a>
-                    </h5>
-                    <p>
-                        <a href="{{ project.url }}" style="text-decoration: none;">
-                            <span class="visible-xs-inline d-block d-sm-none">{{ project.excerpt | strip_html | truncatewords: 20 }}</span>
-                          <span class="hidden-xs  d-none d-sm-block">{{ project.excerpt | strip_html | truncatewords: 20 }}</span>
-                        </a>
-                    </p>
-                </div>
-                {% endif %}
-                {% endfor %}
-            </div>
-
-
-            <div class="clearfix"></div>
-            <div class="text-center" style="padding-top: 20px;">
-              <a href="/projects" class="btn">See all projects</a>
-            </div>
-            <div class="text-center" style="padding-top: 20px;">
-              <a href="https://www.linkedin.com/in/danleyb2/" target="_blank" class="btn">CV</a>
-            </div>
-          
-  </div>
-
+        </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top: 2rem;"><a href="/projects" class="btn">See All Projects</a></div>
 
 </div>
