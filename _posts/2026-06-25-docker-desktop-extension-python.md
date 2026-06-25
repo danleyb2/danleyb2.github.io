@@ -1,9 +1,13 @@
 ---
 layout: post
-title:  Building Desktop GUIs with Docker Extensions for Python Tools
-date:   2026-06-25 14:00:00 +0300
+title:  "Building Python Desktop Executables with GUIs"
+
+date:   2008-06-25 15:18:25 +0300
+
 categories: [Docker, PyInstaller, DesktopGUI, Python]
-is_highlighted: false
+
+is_highlighted: true
+
 ---
 
 For years, the go-to way to ship a Python desktop app has been clear: build your GUI in whatever framework makes sense, then bundle it with **PyInstaller** into a standalone binary. It works. But it's also a fragile process — dependency hell, platform-specific quirks, and binaries that grow to 50MB+ for what should be a simple script.
@@ -193,15 +197,11 @@ Users then install it from the command line or Docker Desktop's Extensions marke
 - Your audience won't have Docker Desktop installed
 - The tool is genuinely simple enough for Gooey + PyInstaller in an afternoon
 
-## Comparison: Dagster & Prefect
-
-It's worth noting this pattern isn't new. **Electron**, **Tauri**, and frameworks like **Dagster** and **Prefect** ship desktop GUIs using the same split architecture: web frontend + backend container, distributed as desktop applications. Docker Extensions just makes that pattern official, standardized, and first-class in Docker Desktop.
-
-The advantage is ecosystem integration — your extension can appear in Docker Desktop's sidebar, hook into container logs automatically, share state with other extensions, and get installed through the same mechanism as any other Docker tool.
-
 ## Final Thoughts
 
 PyInstaller isn't going away — it works for what it does. But if you're building Python tools that need a GUI and you're already comfortable with containers, Docker Desktop Extensions save an enormous amount of pain. One build, every platform, real dependency isolation, and an installation process that doesn't look like malware from 2014.
+
+The advantage is ecosystem integration — your extension can appear in Docker Desktop's sidebar, hook into container logs automatically, share state with other extensions, and get installed through the same mechanism as any other Docker tool.
 
 The future of desktop Python tooling might not be native binaries at all — it might be `docker run` wearing a React face.
 

@@ -1,28 +1,55 @@
 ---
 layout: default2
 title: Experience
-permalink: /experience
-
+permalink: /experiences
 ---
 
-{% assign selected_status = "Active" %}
+<style>
+    .exp-entry {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-left: 3px solid #1a73e8;
+        background: #f8f9fa;
+        border-radius: 0 8px 8px 0;
+    }
+    .exp-entry h2 {
+        margin-top: 0;
+        color: #333;
+    }
+    .exp-meta {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    .exp-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.75rem;
+    }
+    .exp-tag {
+        background: #e8f0fe;
+        color: #1a73e8;
+        padding: 0.15rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.78rem;
+    }
+</style>
 
-{% for experience in site.experiences %}
-    {% if experience.status == selected_status %}
-        <article>
-            <h2>
-                <a href="{{ experience.url }}">
-                    {{ experience.title }}
-                </a>
-            </h2>
-            <p>{{ experience.date | date: "%B %Y" }}</p>
-            <p>{{ experience.description }}</p>
-            <p>
-                {% for tag in experience.tags %}
-                #{{ tag }}
-                {% endfor %}
-            </p>
-        </article>
-    {% endif %}
+<div class="container" style="max-width: 800px;">
+    <h1>Experience</h1>
 
-{% endfor %}
+    {% assign sorted = site.experiences | sort: 'date' | reverse %}
+    {% for experience in sorted %}
+    <div class="exp-entry">
+        <h2>{{ experience.title }}</h2>
+        <p class="exp-meta">{{ experience.date | date: '%B %Y' }} — {{ experience.description }}</p>
+        {{ experience.content }}
+        <div class="exp-tags">
+            {% for tag in experience.tags %}
+            <span class="exp-tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

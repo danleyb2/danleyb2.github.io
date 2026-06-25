@@ -4,7 +4,7 @@ title:  "Svg Icon"
 date:   2008-10-19 15:18:25 +0300
 categories: [lit-element, lit-html]
 
-is_highlighted: true
+is_highlighted: false
 
 
 ---

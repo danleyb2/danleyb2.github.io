@@ -1,41 +1,33 @@
 ---
 layout: project
-
-title: helpdesk
+title: Helpdesk LiveChat
 date: 2019-08-05
-description: Realtime LiveChat widget application for websites. 
-
+description: Realtime live-chat platform with multi-org support, 2-way email threading, and help center auto-generation.
 tags:
-  - Node 
+  - Node
   - Express
   - Socket.io
   - MongoDB
-  
 status: Active
-
-github: https://github.com/danleyb2/helpdesk
-
-technologies:
-  - Node
-  - Socket.io
-  - Backend
-  - SMTP
-  - mkdocs
-  - MongoDB
-
 is_highlighted: true
-
-
+github: https://github.com/danleyb2/helpdesk
+technologies:
+  - Node.js
+  - Express
+  - Socket.IO
+  - MongoDB
+  - SMTP
 ---
 
-Realtime LiveChat widget application for websites. 
+A real-time live-chat widget application for websites with full help desk functionality.
 
-#### Features
-- multiple organization support
-- multiple departments per organization
-- per department support email
-- Live chat plugin support with theme customizations
-- 2 way email conversation using https://github.com/danleyb2/helpdesk_mail_server
-- HelpCenter (created from conversations)
-- Bots
+#### Key Features
+- Multi-organization support with per-department routing
+- Real-time chat plugin with theme customization
+- 2-way email conversation via mail server integration
+- Auto-generated help center from resolved conversations
+- Built-in bot support for common queries
+- Full documentation hosted at [mkdocs](https://github.com/danleyb2/helpdesk)
 
+#### Tech Stack
+Node.js, Express, Socket.IO, MongoDB, Winston logging, Passport auth
