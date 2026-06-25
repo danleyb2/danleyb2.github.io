@@ -12,3 +12,10 @@ _site
 .jekyll-metadata
 vendor
 .obsidian
+
+# OpenClaw workspace internals (agent config, not blog content)
+AGENTS.md
+SOUL.md
+TOOLS.md
+HEARTBEAT.md
+openclaw-workspace-state.json
