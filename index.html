@@ -82,12 +82,14 @@ layout: default2
 <div class="container" style="max-width: 900px; margin: 0 auto;">
 
     <h2 class="section-title">📝 Recent Articles</h2>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts %}
+     {% if post.is_highlighted %}
     <div class="post-card">
         <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
         <h4 style="margin: 0.25rem 0;"><a href="{{ post.url }}" style="color:#1a73e8; text-decoration:none;">{{ post.title }}</a></h4>
         <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
     </div>
+     {% endif %}
     {% endfor %}
     <div class="text-center"><a href="/blog" class="btn">View All Articles</a></div>
 
