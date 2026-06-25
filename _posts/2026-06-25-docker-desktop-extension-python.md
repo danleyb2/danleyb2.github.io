@@ -23,6 +23,56 @@ The traditional path:
 4. Test on Windows, macOS, Linux separately
 5. Maintain three installer chains forever
 
+Here's what that traditional path actually looks like:
+
+```python
+# detect.py - A simple plate recognition CLI wrapped in Gooey
+from gooey import Gooey, GooeyParser
+import subprocess
+import os
+
+@Gooey(
+    program_name="Plate Recognizer",
+    description="Upload an image and get license plate data back"
+)
+def main():
+    parser = GooeyParser()
+    parser.add_argument("image", widget="FileDialog", help="Input image file")
+    args = parser.parse_args()
+
+    result = subprocess.run(
+        ["python", "recognize.py", args.image],
+        capture_output=True, text=True
+    )
+    print(result.stdout)
+
+if __name__ == "__main__":
+    main()
+```
+
+Then build it:
+```bash
+pip install gooey pyinstaller
+pyinstaller --onefile --windowed detect.py
+```
+
+That's the whole process. One command for the GUI, one command for the binary.
+
+**What works about this:**
+- Gooey auto-generates a window with file pickers, text outputs, etc. from your function signature
+- PyInstaller bundles everything into a single `.exe` on Windows or a binary on macOS/Linux
+- Works offline, no Docker required
+
+**What doesn't work about this:**
+- The generated EXE is ~40-80MB even for trivial scripts (all of Python + stdlib bundled)
+- Windows antivirus will flag it as suspicious 70% of the time
+- macOS Gatekeeper rejects unsigned binaries instantly
+- Linux requires matching glibc versions or it won't run at all
+- Every dependency update means rebuilding on every platform
+- No built-in way to handle large models (onnx, torch, etc.) — they have to fit in your binary
+
+Compare that to the Docker path: your Python tool stays in a lean container image, only ~300MB for heavy ML workloads, and runs identically everywhere Docker is installed.
+
 The Docker Extensions path:
 1. Build a web-based GUI
 2. Wrap the CLI in a container
@@ -42,6 +92,8 @@ A web app — typically React, Vue, or Svelte — that renders inside a dedicate
 ### The Backend
 
 A container (or `docker-compose` stack) that runs your actual tooling. For Python workloads, this is where PyInstaller binaries live, where heavy ML models are loaded, where Docker-in-Docker pipelines execute. The UI is just the window; the backend does the work.
+
+The extension manifests tie them together:
 
 The extension manifests tie them together:
 ```json
