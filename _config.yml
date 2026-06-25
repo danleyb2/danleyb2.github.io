@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 #
 # Site settings
-title: Brian Nyaundi - Full-Stack Developer & DevOps Engineer
+title: danleyb2
 email: contact@danleyb2.dev
 description: >-
   Software developer specializing in Python, JavaScript, Docker, and system reliability.
@@ -14,7 +14,6 @@ github_username: danleyb2
 header_pages:
   - blog.html
   - projects.html
-  - experiences.html
   - about.html
 
 # Build settings
