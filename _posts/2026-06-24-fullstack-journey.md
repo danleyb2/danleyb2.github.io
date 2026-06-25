@@ -8,9 +8,10 @@ is_highlighted: true
 
 ## Learning and Hobby Projects (2014-2016)
 
-While taking a **Bachelor's in Electrical and Electronics Engineering** from The Technical University of Kenya in 2018, It was during those classes that I realized something: *I loved building things far more than analyzing circuits.*
+While taking a **Bachelor's in Electrical and Electronics Engineering** from The Technical University of Kenya (graduating 2018), I realized something: *I loved building things far more than analyzing circuits.*
 The coursework gave me a technical foundation into Microprocessor systems, programming and simulation, internet database programming.
-I pivoted. Hard. What followed was days on end of writing Java1.7 and Python2.7 code on hobby projects.
+
+I pivoted. Hard. In the years leading up to graduation, what followed were marathon coding sessions on hobby projects in Java 7 and Python 2.7.
 
 ## InterIntel Technologies (2016–2020)
 
@@ -35,9 +36,9 @@ This is where I got deep into:
 - **Integration development**: Building sites, scripts, and APIs around vision AI models
 - Contributing to the [deep-license-plate-recognition](https://github.com/parkpow/deep-license-plate-recognition/) codebase
 
-## Freelance & Independent Work (2017–Present)
+## Freelance & Parallel Work (2017–Present)
 
-Running parallel to everything else, I've been a freelance developer taking on projects end-to-end:
+Running parallel to ParkPow, I've been a freelance developer taking on projects end-to-end:
 
 - **[Salesleadgen](https://salesleadgen.com)** — A leads generation web application I built and still maintain. Built with Python/Django, it scrapes LinkedIn and Sales Navigator data for lead prospecting.
 - **[AMZ Top 16](https://github.com/danleyb2/)** — Tools for tracking Amazon best seller rankings across products
@@ -52,8 +53,8 @@ I believe in giving back. Here are some of my notable open-source projects:
 
 | Project | Stack | Stars |
 |---------|-------|-------|
-| [Instagram-API](https://github.com/danleyb2/Instagram-API) | Python | ⭐ 120 |
-| [alpr-anpr-android](https://github.com/danleyb2/alpr-anpr-android) | Java | ⭐ 3 |
+| [Instagram-API](https://github.com/danleyb2/Instagram-API) | Python | ⭐ 120 (as of June 2026) |
+| [alpr-anpr-android](https://github.com/danleyb2/alpr-anpr-android) | Java | ⭐ 3 (as of June 2026) |
 | [ussds](https://github.com/danleyb2/ussds) | Python/Django | USSD utility for finding shortcodes |
 | [django-pde](https://github.com/danleyb2/django-pde) | Python | Django packages dev environment |
 | [mitmproxy-docker](https://github.com/danleyb2/mitmproxy-docker) | Python | Dockerized mitmproxy |
