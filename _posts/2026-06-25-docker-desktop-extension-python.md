@@ -75,7 +75,9 @@ That's the whole process. One command for the GUI, one command for the binary.
 - Every dependency update means rebuilding on every platform
 - No built-in way to handle large models (onnx, torch, etc.) — they have to fit in your binary
 
-Compare that to the Docker path: your Python tool stays in a lean container image, only ~300MB for heavy ML workloads, and runs identically everywhere Docker is installed.
+Compare that to the Docker path: your Python tool stays in a lean container image (~300MB for heavy ML workloads due to pre-packaged runtimes), runs identically everywhere Docker is installed. For lightweight tools the container can be under 50MB.
+
+The traditional installers ship *every* time you update; containers only need to pull delta layers.
 
 The Docker Extensions path:
 1. Build a web-based GUI
@@ -96,8 +98,6 @@ A web app — typically React, Vue, or Svelte — that renders inside a dedicate
 ### The Backend
 
 A container (or `docker-compose` stack) that runs your actual tooling. For Python workloads, this is where PyInstaller binaries live, where heavy ML models are loaded, where Docker-in-Docker pipelines execute. The UI is just the window; the backend does the work.
-
-The extension manifests tie them together:
 
 The extension manifests tie them together:
 ```json
@@ -149,7 +149,7 @@ No PyInstaller needed. The container *is* the runtime.
 
 Using the official Docker Desktop Extension SDK:
 
-```jsx
+```javascript
 import { Client } from '@docker/extension-api-client'
 
 const client = new Client()
