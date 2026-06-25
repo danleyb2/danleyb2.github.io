@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "From Electrical Engineering to FullStack: My Journey as a Developer"
+title: "My Journey as a Developer"
 date: 2026-06-24 15:00:00 +0300
 categories: [career, development, fullstack]
 is_highlighted: true
 ---
 
-## The Unexpected Pivot
+## Learning and Hobby Projects (2014-2016)
 
-I graduated with a **Bachelor's in Electrical and Electronics Engineering** from The Technical University of Kenya in 2018. Microprocessor systems, programming and simulation, internet database programming — the coursework gave me a technical foundation, but it was during those classes that I realized something: *I loved building things far more than analyzing circuits.*
-
-So I pivoted. Hard. What followed was nearly a decade of building, shipping, and learning across the full stack.
+While taking a **Bachelor's in Electrical and Electronics Engineering** from The Technical University of Kenya in 2018, It was during those classes that I realized something: *I loved building things far more than analyzing circuits.*
+The coursework gave me a technical foundation into Microprocessor systems, programming and simulation, internet database programming.
+I pivoted. Hard. What followed was days on end of writing Java1.7 and Python2.7 code on hobby projects.
 
 ## InterIntel Technologies (2016–2020)
 
@@ -73,18 +73,12 @@ After nearly a decade in the trenches, these are my core tools and technologies:
 - **DevOps**: Docker, nginx, CentOS 7, CI/CD pipelines, Git workflows
 - **AI/ML**: Computer Vision (ALPR), Vision AI model integrations
 - **Databases**: PostgreSQL, MySQL, MongoDB, Realm DB
-- **Infrastructure**: Home Assistant, Kubernetes Helm charts
+- **Infrastructure**: Linux, Kubernetes, Helm charts, Proxmox, Home Assistant
 
 ## The Pattern
-
-If there's a through-line in my career, it's this: **I build things that solve problems I actually have.** Salesleadgen? I needed lead gen. Inventory Tracker? I wanted to know when prices dropped. ABS R? I was curious about Amazon rankings. The tools come from the friction.
 
 I'm also drawn to projects at the intersection of domains — automation + AI, mobile + web, DevOps + developer tooling. The interesting work lives in those overlap zones.
 
 ## What's Next
 
-I'm continuing to work on Plate Recognizer's vision AI integrations, maintaining my freelance portfolio, and exploring where Home Assistant, automation, and AI converge. There's a lot more to build.
-
----
-
-*Thanks for reading. If any of this resonates or you want to chat about anything — reach me at [contact@danleyb2.dev](mailto:contact@danleyb2.dev) or on [GitHub](https://github.com/danleyb2).*
+I'm continuing to work on Plate Recognizer's vision AI integrations and exploring where Home Assistant, automation, and AI converge. There's a lot more to build.
