@@ -40,3 +40,7 @@ A classic snake arcade game recreation in Java. Features growing snake mechanics
 ### ShooterGame
 [GitHub](https://github.com/danleyb2/ShooterGame)
 A clone of the classic Arcade Defender shooter. Features a horizontally-scrolling battlefield where you control a ship on the left side, moving freely up, down, left, and right to fend off waves of enemies attacking from the right.
+
+### Tiles
+[GitHub](https://github.com/danleyb2/Tiles)
+A clone of the 'Don't Touch The White Tile' arcade game. Features a grid of tiles that progressively turn white — players must tap only the safe colored tiles to survive as speed and complexity increase.
