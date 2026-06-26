@@ -32,3 +32,7 @@ A 2D platformer game inspired by classic side-scrolling titles. Features charact
 ### RapidRollClone
 [GitHub](https://github.com/danleyb2/RapidRollClone)
 A 2D rolling-ball puzzle game where players tilt the playfield to navigate a sphere through increasingly complex obstacle courses. Tests physics simulation and real-time input handling.
+
+### SnakeClone
+[GitHub](https://github.com/danleyb2/SnakeClone)
+A classic snake arcade game recreation in Java. Features growing snake mechanics, food collection scoring, collision detection, and increasing difficulty as the snake grows longer.
