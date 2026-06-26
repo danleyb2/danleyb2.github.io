@@ -828,66 +828,7 @@ article.single-page {
   background-color:#222;
   color:#fff;
 }
-.entry-content h1 {
-  color:#222;
-  font-family:'Lato', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  letter-spacing:.2em;
-  line-height:1.6em;
-  text-transform:uppercase;
-  margin:0 0 40px;
-}
-.entry-content h2 {
-  color:#222;
-  font-family:'Lato', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  letter-spacing:.2em;
-  line-height:1.6em;
-  text-transform:uppercase;
-  margin:0 0 40px;
-}
-.entry-content h3 {
-  color:#222;
-  font-family:'Lato', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  letter-spacing:.2em;
-  line-height:1.6em;
-  text-transform:uppercase;
-  margin:0 0 10px;
-}
-.entry-content h4 {
-  color:#222;
-  font-family:'Lato', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  letter-spacing:.2em;
-  line-height:1.6em;
-  text-transform:uppercase;
-  margin:0 0 40px;
-}
-.entry-content h5 {
-  color:#222;
-  font-family:'Lato', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  letter-spacing:.2em;
-  line-height:1.6em;
-  text-transform:uppercase;
-  margin:0 0 40px;
-}
-.entry-content h6 {
-  color:#222;
-  font-family:'Lato', sans-serif;
-  font-weight:700;
-  font-style:normal;
-  letter-spacing:.2em;
-  line-height:1.6em;
-  text-transform:uppercase;
-  margin:0 0 40px;
-}
+
 .entry-content {
   color:#222;
   font-weight:400;
