@@ -230,65 +230,27 @@ permalink: /about
         <h3>🚀 Highlighted Projects</h3>
         <div>
             <div class="proj-grid">
+{% for project in site.projects %}
+{% if project.is_highlighted == true %}
                 <div class="proj-card">
-                    <h4 class="proj-title"><a href="https://github.com/danleyb2/docker-desktop-extension" target="_blank">Docker Desktop Extension</a></h4>
-                    <p class="proj-desc">A Docker Desktop extension streamlining container management for developers — built as a Chrome-based UI extension using Go backend APIs.</p>
+                    <h4 class="proj-title">{% if project.github and project.github contains "http" %}
+                        <a href="{{ project.github }}" target="_blank">{{ project.title }}</a>
+                    {% else %}
+                        {{ project.title }}
+                    {% endif %}</h4>
+{% if project.description and project.description != "A starter template" %}
+                    <p class="proj-desc">{{ project.description }}</p>
+{% endif %}
+{% if project.technologies and project.technologies.size > 0 %}
                     <div class="proj-techs">
-                        <span class="proj-tech-tag">Go</span>
-                        <span class="proj-tech-tag">Chrome Extensions API</span>
-                        <span class="proj-tech-tag">Docker SDK</span>
+{% for tech in project.technologies %}
+                        <span class="proj-tech-tag">{{ tech }}</span>
+{% endfor %}
                     </div>
+{% endif %}
                 </div>
-
-                <div class="proj-card">
-                    <h4 class="proj-title"><a href="https://github.com/danleyb2/Chatly" target="_blank">Chatly</a></h4>
-                    <p class="proj-desc">Real-time live-chat platform serving thousands of conversations simultaneously. Built with Django REST framework, Socket.IO, and Redis for WebSocket pub/sub.</p>
-                    <div class="proj-techs">
-                        <span class="proj-tech-tag">Django</span>
-                        <span class="proj-tech-tag">Socket.IO</span>
-                        <span class="proj-tech-tag">Redis</span>
-                    </div>
-                </div>
-
-                <div class="proj-card">
-                    <h4 class="proj-title"><a href="https://github.com/danleyb2/Instagram-API" target="_blank">Instagram API Wrapper</a></h4>
-                    <p class="proj-desc">Python wrapper for the Instagram Graph API, providing a clean interface for managing posts, stories, and analytics programmatically.</p>
-                    <div class="proj-techs">
-                        <span class="proj-tech-tag">Python</span>
-                        <span class="proj-tech-tag">REST APIs</span>
-                        <span class="proj-tech-tag">OAuth2</span>
-                    </div>
-                </div>
-
-                <div class="proj-card">
-                    <h4 class="proj-title"><a href="https://danleyb2.dev/projects/ussds-android" target="_blank">USSD Menu Designer</a></h4>
-                    <p class="proj-desc">Visual drag-and-drop tool for designing USSD menus for mobile banking and services. Targets Kenya's massive USSD-based fintech ecosystem.</p>
-                    <div class="proj-techs">
-                        <span class="proj-tech-tag">Android</span>
-                        <span class="proj-tech-tag">Kotlin</span>
-                        <span class="proj-tech-tag">USSD Protocol</span>
-                    </div>
-                </div>
-
-                <div class="proj-card">
-                    <h4 class="proj-title"><a href="https://danleyb2.dev/projects/java-games.html" target="_blank">Java Desktop Games Collection</a></h4>
-                    <p class="proj-desc">A collection of 2D Java games built for fun — including platformers, puzzle solvers, and arcade clones like Snake, ShooterGame, and Tiles.</p>
-                    <div class="proj-techs">
-                        <span class="proj-tech-tag">Java</span>
-                        <span class="proj-tech-tag">JavaFX</span>
-                        <span class="proj-tech-tag">2D Graphics</span>
-                    </div>
-                </div>
-
-                <div class="proj-card">
-                    <h4 class="proj-title"><a href="https://danleyb2.dev/projects/helppr" target="_blank">HelpPR</a></h4>
-                    <p class="proj-desc">Help desk ticketing system built for efficient support workflow management with categorization, assignment, and priority tracking.</p>
-                    <div class="proj-techs">
-                        <span class="proj-tech-tag">Django</span>
-                        <span class="proj-tech-tag">PostgreSQL</span>
-                        <span class="proj-tech-tag">Bootstrap</span>
-                    </div>
-                </div>
+{% endif %}
+{% endfor %}
             </div>
         </div>
     </div>
