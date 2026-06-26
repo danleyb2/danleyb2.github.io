@@ -77,17 +77,7 @@
 #navbar-wrapper {
   margin:0;
 }
-@media (min-width:768px) {
-  .navbar-logo-centered #navbar-wrapper {
-    float:none;
-  }
-}
-@media (min-width:768px) {
-  #navbar-wrapper {
-    float:right;
-    padding:24px 0 24px 5px;
-  }
-}
+
 .nav.navbar-nav:hover > li > a {
   color:rgba(34, 34, 34, .4);
 }
@@ -132,30 +122,7 @@
 .navbar-social-icons .navbar-social-icon i {
   font-size:16px;
 }
-.site-header {
-  max-width:1610px;
-  margin-left:auto;
-  margin-right:auto;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  padding:50px 165px;
-}
-@media (max-width:992px) {
-  .site-header {
-    padding:50px 31px;
-  }
-}
-@media (max-width:768px) {
-  .site-header {
-    padding:8px 0 0;
-  }
-}
-@media (max-width:768px) {
-  .site-header.logo-centered {
-    padding:8px 0 50px;
-  }
-}
+
 .navbar-default .navbar-toggle {
   border:none;
   padding:8px;
@@ -938,16 +905,7 @@ article.single-page {
   padding:0.8em 1.8em;
   font-size:13px;
 }
-@media (min-width:768px) {
-  .navbar-logo-centered > .container .navbar-brand, .navbar-logo-centered > .container-fluid .navbar-brand {
-    position:absolute;
-    width:100%;
-    left:0;
-    top:0;
-    text-align:center;
-    margin:auto;
-  }
-}
+
 .post-summary .post-categories {
   margin:0;
   white-space:normal;
@@ -963,26 +921,8 @@ article.single-page {
 .navbar-logo-top .navbar-social-icons {
   display:inline-block;
 }
-@media (min-width:768px) {
-  .navbar-logo-top #navbar-wrapper {
-    float:none;
-    width:100%;
-    padding-left:0;
-    text-align:center;
-  }
-}
-@media (min-width:768px) {
-  .navbar-logo-top .nav.navbar-nav {
-    float:none;
-    display:inline-block;
-  }
-}
-.site-header.logo-top + .recent-posts {
-  margin:0 auto;
-}
-.site-header + .highlight-post {
-  margin-top:5px;
-}
+
+
 .post-summary .post-meta a {
   color:inherit;
   vertical-align:middle;
@@ -1022,19 +962,4 @@ article.single-page {
 article.single-post .entry-content blockquote {
   margin-top:80px;
   margin-bottom:80px;
-}
-.site-header.logo-top .logo-wrapper .logo {
-  font-family:'Lato', sans-serif;
-  font-size:43px;
-  font-weight:500;
-  font-style:normal;
-  letter-spacing:0.05em;
-  line-height:0.9em;
-  text-transform:lowercase;
-  color:#222;
-  height:auto;
-  text-decoration:none;
-}
-.site-header.logo-top .logo-wrapper {
-  padding-bottom:20px;
 }
