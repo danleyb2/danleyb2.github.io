@@ -55,6 +55,89 @@ permalink: /about
         font-size: 0.85rem;
         font-weight: 500;
     }
+
+    /* Experience section */
+    .exp-entry {
+        margin-bottom: 2.5rem;
+    }
+    .exp-company {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        text-decoration: none;
+    }
+    .exp-company:hover {
+        color: #6366f1;
+    }
+    .exp-role {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #374151;
+        margin-top: 0.25rem;
+    }
+    .exp-date {
+        font-size: 0.85rem;
+        color: #9ca3af;
+        margin-top: 0.15rem;
+    }
+    .exp-desc {
+        font-size: 0.95rem;
+        color: #6b7280;
+        line-height: 1.6;
+        margin-top: 0.5rem;
+    }
+
+    /* Projects section */
+    .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
+    .proj-card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1.25rem;
+        transition: all 0.2s ease;
+    }
+    .proj-card:hover {
+        border-color: #1a1a2e;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        transform: translateY(-3px);
+    }
+    .proj-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin: 0 0 0.35rem;
+    }
+    .proj-title a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .proj-title a:hover {
+        color: #6366f1;
+    }
+    .proj-desc {
+        font-size: 0.9rem;
+        color: #6b7280;
+        line-height: 1.55;
+        margin: 0;
+    }
+    .proj-techs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        margin-top: 0.75rem;
+    }
+    .proj-tech-tag {
+        background: #f3f4f6;
+        color: #4b5563;
+        padding: 0.15rem 0.55rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
 </style>
 
 <div class="container" style="max-width: 900px;">
@@ -119,6 +202,95 @@ permalink: /about
                 that saves hours of manual work — I get satisfaction from shipping products that people actually use.
             </p>
         </div>
+    </div>
+
+    <!-- Experiences -->
+    <div class="about-grid" style="margin-top: 3rem;">
+        <h3>💼 Experience</h3>
+        <div>
+            <div class="exp-entry">
+                <a href="https://platerecognizer.com/" target="_blank" class="exp-company">Plate Recognizer (ParkPow)</a>
+                <div class="exp-role">Vision AI Engineer</div>
+                <div class="exp-date">Present</div>
+                <div class="exp-desc">Building Vision AI integrations for real-time license plate recognition at scale. Working across computer vision, backend APIs, and production infrastructure to make automated vehicle identification reliable in the field.</div>
+            </div>
+
+            <div class="exp-entry">
+                <a href="https://danleyb2.dev" target="_blank" class="exp-company">danleyb2.dev</a>
+                <div class="exp-role">Full-Stack Developer & DevOps Engineer</div>
+                <div class="exp-date">2016 — Present</div>
+                <div class="exp-desc">Founded and self-ran a development career spanning full-stack web apps, Android platforms, browser extensions, Docker tooling, and automated systems. Shipped 50+ projects across freelancing, open-source, and personal ventures serving users in 6+ countries.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Highlighted Projects -->
+    <div class="about-grid" style="margin-top: 3rem;">
+        <h3>🚀 Highlighted Projects</h3>
+        <div>
+            <div class="proj-grid">
+                <div class="proj-card">
+                    <h4 class="proj-title"><a href="https://github.com/danleyb2/docker-desktop-extension" target="_blank">Docker Desktop Extension</a></h4>
+                    <p class="proj-desc">A Docker Desktop extension streamlining container management for developers — built as a Chrome-based UI extension using Go backend APIs.</p>
+                    <div class="proj-techs">
+                        <span class="proj-tech-tag">Go</span>
+                        <span class="proj-tech-tag">Chrome Extensions API</span>
+                        <span class="proj-tech-tag">Docker SDK</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <h4 class="proj-title"><a href="https://github.com/danleyb2/Chatly" target="_blank">Chatly</a></h4>
+                    <p class="proj-desc">Real-time live-chat platform serving thousands of conversations simultaneously. Built with Django REST framework, Socket.IO, and Redis for WebSocket pub/sub.</p>
+                    <div class="proj-techs">
+                        <span class="proj-tech-tag">Django</span>
+                        <span class="proj-tech-tag">Socket.IO</span>
+                        <span class="proj-tech-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <h4 class="proj-title"><a href="https://github.com/danleyb2/Instagram-API" target="_blank">Instagram API Wrapper</a></h4>
+                    <p class="proj-desc">Python wrapper for the Instagram Graph API, providing a clean interface for managing posts, stories, and analytics programmatically.</p>
+                    <div class="proj-techs">
+                        <span class="proj-tech-tag">Python</span>
+                        <span class="proj-tech-tag">REST APIs</span>
+                        <span class="proj-tech-tag">OAuth2</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <h4 class="proj-title"><a href="https://danleyb2.dev/projects/ussds-android" target="_blank">USSD Menu Designer</a></h4>
+                    <p class="proj-desc">Visual drag-and-drop tool for designing USSD menus for mobile banking and services. Targets Kenya's massive USSD-based fintech ecosystem.</p>
+                    <div class="proj-techs">
+                        <span class="proj-tech-tag">Android</span>
+                        <span class="proj-tech-tag">Kotlin</span>
+                        <span class="proj-tech-tag">USSD Protocol</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <h4 class="proj-title"><a href="https://danleyb2.dev/projects/java-games.html" target="_blank">Java Desktop Games Collection</a></h4>
+                    <p class="proj-desc">A collection of 2D Java games built for fun — including platformers, puzzle solvers, and arcade clones like Snake, ShooterGame, and Tiles.</p>
+                    <div class="proj-techs">
+                        <span class="proj-tech-tag">Java</span>
+                        <span class="proj-tech-tag">JavaFX</span>
+                        <span class="proj-tech-tag">2D Graphics</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <h4 class="proj-title"><a href="https://danleyb2.dev/projects/helppr" target="_blank">HelpPR</a></h4>
+                    <p class="proj-desc">Help desk ticketing system built for efficient support workflow management with categorization, assignment, and priority tracking.</p>
+                    <div class="proj-techs">
+                        <span class="proj-tech-tag">Django</span>
+                        <span class="proj-tech-tag">PostgreSQL</span>
+                        <span class="proj-tech-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <div style="text-align: center; margin-top: 1rem;">
             <a href="{{ "/assets/cv-brian-nyaundi.pdf" | relative_url }}" class="btn" target="_blank">Download CV</a>
