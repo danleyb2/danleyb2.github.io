@@ -178,6 +178,7 @@ permalink: /about
 
         <div>
             <h3>🛠️ What I Work With</h3>
+            <p><a href="{{ "/skills.md" | relative_url }}">View my full skills →</a></p>
             <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Django / DRF</span>
@@ -193,34 +194,34 @@ permalink: /about
                 <span class="tech-tag">Vision AI</span>
             </div>
         </div>
-
-        <div>
-            <h3>🎯 What I'm Looking For</h3>
-            <p>
-                I enjoy building things end-to-end — from design to deployment. Whether it's a Docker Desktop extension for 
-                developers, a real-time live-chat platform serving thousands of conversations, or an automated scraping tool 
-                that saves hours of manual work — I get satisfaction from shipping products that people actually use.
-            </p>
-        </div>
     </div>
 
     <!-- Experiences -->
     <div class="about-grid" style="margin-top: 3rem;">
         <h3>💼 Experience</h3>
         <div>
+{% for exp in site.experiences %}
             <div class="exp-entry">
-                <a href="https://platerecognizer.com/" target="_blank" class="exp-company">Plate Recognizer (ParkPow)</a>
-                <div class="exp-role">Vision AI Engineer</div>
-                <div class="exp-date">Present</div>
-                <div class="exp-desc">Building Vision AI integrations for real-time license plate recognition at scale. Working across computer vision, backend APIs, and production infrastructure to make automated vehicle identification reliable in the field.</div>
+                {% if exp.title %}
+                <a href="{{ exp.url | relative_url }}" class="exp-company">{{ exp.title }}</a>
+                {% endif %}
+{% if exp.company %}
+                <div class="exp-role">{{ exp.company }}</div>
+{% endif %}
+{% if exp.role %}
+                <div class="exp-role">{{ exp.role }}</div>
+{% endif %}
+{% if exp.date %}
+                <div class="exp-date">{{ exp.date }}</div>
+{% endif %}
+{% if exp.period %}
+                <div class="exp-date">{{ exp.period }}</div>
+{% endif %}
+{% if exp.description and exp.description != "A starter template" %}
+                <div class="exp-desc">{{ exp.description | markdownify }}</div>
+{% endif %}
             </div>
-
-            <div class="exp-entry">
-                <a href="https://danleyb2.dev" target="_blank" class="exp-company">danleyb2.dev</a>
-                <div class="exp-role">Full-Stack Developer & DevOps Engineer</div>
-                <div class="exp-date">2016 — Present</div>
-                <div class="exp-desc">Founded and self-ran a development career spanning full-stack web apps, Android platforms, browser extensions, Docker tooling, and automated systems. Shipped 50+ projects across freelancing, open-source, and personal ventures serving users in 6+ countries.</div>
-            </div>
+{% endfor %}
         </div>
     </div>
 
