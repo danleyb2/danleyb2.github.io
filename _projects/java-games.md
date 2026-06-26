@@ -36,3 +36,7 @@ A 2D rolling-ball puzzle game where players tilt the playfield to navigate a sph
 ### SnakeClone
 [GitHub](https://github.com/danleyb2/SnakeClone)
 A classic snake arcade game recreation in Java. Features growing snake mechanics, food collection scoring, collision detection, and increasing difficulty as the snake grows longer.
+
+### ShooterGame
+[GitHub](https://github.com/danleyb2/ShooterGame)
+A clone of the classic Arcade Defender shooter. Features a horizontally-scrolling battlefield where you control a ship on the left side, moving freely up, down, left, and right to fend off waves of enemies attacking from the right.
