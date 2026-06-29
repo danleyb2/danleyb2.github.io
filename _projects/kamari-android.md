@@ -1,9 +1,9 @@
 ---
 layout: project
 
-title: Kamari Android
-date: 2023-10-15
-description: A Simple 2D Android Card Game
+title: Kamari 
+date: 2017-08-12
+description: Android 2D  Card Game
 
 tags:
   - Android
@@ -11,7 +11,7 @@ tags:
   
 status: Active
 
-github: https://danleyb2.dev/projects#
+github: https://github.com/danleyb2/kamari
 
 technologies:
   - Android
