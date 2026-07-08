@@ -226,13 +226,39 @@ The V5XCEX SoC has 1GB total RAM, but the camera firmware, video encoding, and n
 
 i-PRO's toolchain isn't standard Yocto or Buildroot — it's vendor-supplied and opaque. You get `setup_env.sh` which sets compiler paths, sysroot, and flags. Breaking the build pipeline for new SDK versions is an annual maintenance task.
 
-### 4. Debugging Without a Console
+## Debugging
 
-No SSH to the camera by default. No `gdb` attached to the process. The only debug output goes through ADAM's logging infrastructure (`ADAM_DEBUG_PRINT`) which surfaces in the i-PRO web UI at a configurable log level — and even then, it's line-buffered.
+i-PRO ships two tools worth knowing about:
 
-## Results
+- **Resource Monitor** — Docker container browser, live tail of container logs, and per-container resource usage.
+- **Adam Operations UI** (Chrome extension) — start, stop, uninstall apps; useful when the web UI is unresponsive.
 
-The app runs as **V1.2**, targeting SDK v3.10 and firmware v3.65+. It processes HD camera streams in real-time with plate detection + OCR, outputs structured JSON results back through the ADAM event system, and is configured entirely via the camera's built-in web interface (no SSH, no config files on disk).
+Remember: no SSH to the camera by default. No `gdb` attached to the process. The only debug output goes through ADAM's logging infrastructure (`ADAM_DEBUG_PRINT`) which surfaces in the i-PRO web UI at a configurable log level — and even then, it's line-buffered.
+
+## Installation Walkthrough
+
+Here's what deployment looks like in practice:
+
+**Supported models:** CV52-series cameras with Docker capability — WV-X15300*, WV-X15500*, WV-X22300*, WV-X22500* and the X25600/X22600/WV-X15700/WV-X22700/WV-X25700 lines. The older CV2/CV22/CV25m (ambaCV2X) chips are **not** supported.
+
+**Before you start:**
+- Upgrade to the latest firmware first — extract the `.img` file from i-PRO's documentation database and install via Setup > Maintenance > Upgrade. Stream needs Docker support that only ships in recent firmwares.
+- Enable "Ext. software mode" in the camera UI, then mount `/mnt/sda/adamapp` → `/user-data` for SD card storage. The flash has a write-cycle limit; without an SD card you'll kill the camera's NAND over time.
+- You need ~700 MB free (Stream + models) and internet access from the camera for license validation.
+
+**Installing:**
+The camera runs two AdamApps: the **Docker extension module** (prerequisite, installed from i-PRO's docs first), then the **Stream `.ext`** bundle itself. You can use the camera web UI (Setup > Application > Extensions) or the Adam Operations UI Chrome extension. If the camera throws a ROM error during install, just retry — it works.
+
+**Configuring detection:**
+Everything goes through the Plate Recognizer dashboard — add your camera with an RTSP URL from these patterns:
+```
+rtsp://<cam_ip>:554/mediainput/h264/stream_1
+rtsp://<user:pass>@<cam_ip>:554/mediainput/h264/stream_1
+# stream_2, stream_3, stream_4 for multi-stream cameras
+```
+Recommended feed: 1280×720 at 15fps, H.264.
+
+For detection results, enable webhooks in the Plate Recognizer account and turn on **caching** if the camera's internet is spotty — it queues results locally and flushes when connectivity returns.
 
 The biggest win: **the Python code is identical to what runs on Docker.** Only the C++ host layer changes — the embedding glue that translates ADAM events into Python calls. Everything from frame processing through API submission stays in one `pymain.py`.
 
