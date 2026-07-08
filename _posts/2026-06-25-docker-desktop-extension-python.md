@@ -6,8 +6,6 @@ date:   2008-06-25 15:18:25 +0300
 
 categories: [Docker, PyInstaller, DesktopGUI, Python]
 
-is_highlighted: true
-
 ---
 
 For years, the go-to way to ship a Python desktop app has been clear: build your GUI in whatever framework makes sense, then bundle it with **PyInstaller** into a standalone binary. It works. But it's also a fragile process — dependency hell, platform-specific quirks, and binaries that grow to 50MB+ for what should be a simple script.
