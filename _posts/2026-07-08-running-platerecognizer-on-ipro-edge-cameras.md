@@ -2,7 +2,7 @@
 layout: post
 title:  "Running PlateRecognizer on i-PRO Edge Cameras with the ADAM Framework"
 
-date:   2026-07-08 10:46:00 +0300
+date:   2026-07-08 05:10:00 +0000
 
 categories: [VisionAI, EmbeddedAI, Docker, Python, Cpp, EdgeComputing, CameraSDK]
 
