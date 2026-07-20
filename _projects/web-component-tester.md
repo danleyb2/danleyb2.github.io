@@ -1,7 +1,7 @@
 ---
 layout: project
 
-title: Web Component Starter
+title: Web Component Tester
 date: 2020-02-08
 description: Docker image containing headless browsers for testing Web Components
 
