@@ -306,21 +306,6 @@
   opacity:0.9;
   line-height:1;
 }
-.instafeed .headline p {
-  font-weight:lighter;
-  font-style:italic;
-  font-size:14.25px;
-  font-family:'Libre Baskerville', serif;
-  letter-spacing:.01em;
-  line-height:1.9em;
-  text-transform:none;
-  margin-bottom:23px;
-}
-.instafeed .headline h2 {
-  font-size:30px;
-  letter-spacing:.18em;
-  line-height:1.45em;
-}
 .heading {
   color:#222;
   font-weight:700;
@@ -464,19 +449,13 @@ footer.site-footer .copyright a {
   line-height:1.9em;
   text-transform:none;
   -webkit-transition:color .15s ease-out;
-  -moz-transition:color .15s ease-out;
-  -ms-transition:color .15s ease-out;
-  -o-transition:color .15s ease-out;
+
   transition:color .15s ease-out;
   padding-bottom:.05em;
   border-bottom-width:1px;
   border-bottom-style:solid;
   border-bottom-color:rgba(29, 29, 29, .09);
-  -webkit-transition:border-color .15s ease-out, color .15s ease-out;
-  -moz-transition:border-color .15s ease-out, color .15s ease-out;
-  -ms-transition:border-color .15s ease-out, color .15s ease-out;
-  -o-transition:border-color .15s ease-out, color .15s ease-out;
-  transition:border-color .15s ease-out, color .15s ease-out;
+
 }
 article.single-post .meta li {
   font-weight:500;
@@ -555,19 +534,11 @@ article.single-post .featured-image img {
   line-height:1.9em;
   text-transform:none;
   text-decoration:none;
-  -webkit-transition:color .15s ease-out;
-  -moz-transition:color .15s ease-out;
-  -ms-transition:color .15s ease-out;
-  -o-transition:color .15s ease-out;
-  transition:color .15s ease-out;
+
   padding-bottom:.05em;
   border-bottom-width:1px;
   border-bottom-style:solid;
   border-bottom-color:rgba(29, 29, 29, .09);
-  -webkit-transition:border-color .15s ease-out, color .15s ease-out;
-  -moz-transition:border-color .15s ease-out, color .15s ease-out;
-  -ms-transition:border-color .15s ease-out, color .15s ease-out;
-  -o-transition:border-color .15s ease-out, color .15s ease-out;
   transition:border-color .15s ease-out, color .15s ease-out;
 }
 .single-content .post-categories a:hover {
@@ -594,20 +565,12 @@ article.single-post .featured-image img {
   line-height:1.9em;
   text-transform:none;
   text-decoration:none;
-  -webkit-transition:color .15s ease-out;
-  -moz-transition:color .15s ease-out;
-  -ms-transition:color .15s ease-out;
-  -o-transition:color .15s ease-out;
   transition:color .15s ease-out;
   padding-bottom:.05em;
   border-bottom-width:1px;
   border-bottom-style:solid;
   border-bottom-color:rgba(29, 29, 29, .09);
-  -webkit-transition:border-color .15s ease-out, color .15s ease-out;
-  -moz-transition:border-color .15s ease-out, color .15s ease-out;
-  -ms-transition:border-color .15s ease-out, color .15s ease-out;
-  -o-transition:border-color .15s ease-out, color .15s ease-out;
-  transition:border-color .15s ease-out, color .15s ease-out;
+
 }
 .single-content .post-tags a:hover {
   text-decoration:none;
@@ -673,52 +636,6 @@ article.single-post .featured-image img {
 .btn.btn-submit:active {
   background:transparent;
   transform:translateY(1px);
-}
-.entry-content blockquote p {
-  color:inherit;
-  font-style:italic;
-  font-family:'Libre Baskerville', serif;
-  line-height:1.4em;
-}
-.entry-content blockquote p {
-  font-size:30px;
-  font-family:'Libre Baskerville', serif;
-  text-align:center;
-  padding-bottom:30px;
-  margin:0 auto !important;
-  position:relative;
-  -webkit-text-stroke:0.7px #fcfcfc;
-  -moz-text-stroke:0.7px #fcfcfc;
-  -ms-text-stroke:0.7px #fcfcfc;
-}
-.entry-content blockquote {
-  padding-top:40px;
-  padding-bottom:40px;
-  border:none;
-  overflow:hidden;
-  position:relative;
-}
-@media (min-width:1200px) {
-  .entry-content blockquote {
-    margin-left:-70px;
-    margin-right:-70px;
-  }
-}
-.entry-content blockquote footer {
-  padding:0;
-  margin:0 auto;
-  font-family:'Lato', sans-serif;
-  text-align:center;
-  position:relative;
-}
-.entry-content blockquote:before {
-  top:0;
-  left:25%;
-  content:'';
-  width:50%;
-  height:100%;
-  position:absolute;
-  background-color:#222;
 }
 .widget ul li .post-date {
   opacity:0.7;
@@ -833,7 +750,7 @@ article.single-page {
   color:#222;
   font-weight:400;
   font-style:normal;
-  font-size:14.5px;
+  font-size:15px;
   font-family:'Lora', serif;
   letter-spacing:.01em;
   line-height:2.2em;
@@ -959,10 +876,6 @@ article.single-page {
 }
 .btn.btn-submit, .btn.btn-submit-inverse {
   position:relative;
-}
-article.single-post .entry-content blockquote {
-  margin-top:80px;
-  margin-bottom:80px;
 }
 .site-header.logo-top .logo-wrapper .logo {
   font-family:'Lato', sans-serif;
