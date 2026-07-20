@@ -6,11 +6,30 @@ email: contact@danleyb2.dev
 description: >-
   Software developer specializing in Python, JavaScript, Docker, and system reliability.
   Currently building Vision AI integrations at PlateRecognizer.
+
+lang: en
+locale: en_US
+
+author:
+  name: Brian Nyaundi
+  email: contact@danleyb2.dev
+
 baseurl: ""
 url: "https://danleyb2.dev"
-twitter_username: danleyb2
-github_username: danleyb2
 
+tagline: Software Developer
+same_as:
+  - https://github.com/danleyb2
+  - https://www.linkedin.com/in/danleyb2/
+
+image: /assets/images/me.jpg
+twitter:
+  username: danleyb2
+  card: summary_large_image
+
+github:
+  username: danleyb2
+google_analytics: G-5XJD9Y6J1K
 header_pages:
   - blog.html
   - projects.html
@@ -60,12 +79,6 @@ defaults:
     values:
       layout: default2
 
-# SEO & Social
-jekyll_seo_tag:
-  twitter:
-    username: danleyb2
-  image: /assets/images/me.jpg
-  description: "Software developer specializing in Python, JavaScript, Docker, and system reliability."
 
 minima:
   skin: auto
